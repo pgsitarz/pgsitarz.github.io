@@ -1,6 +1,7 @@
 ---
-title: Notebook
-icon: smiley
+label: Home
+icon: house
+backlinks: enabled
 ---
 
 ## Info on GitHub education for students

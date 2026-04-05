@@ -5,7 +5,7 @@ url: pgsitarz.github.io # Use your website address here
 
 start:
   # Uncomment the next line to try Retype Pro features
-  # pro: true
+  pro: true
 
 meta:
   title: " • sitarz.net"
@@ -45,3 +45,18 @@ footer:
 
 templating:
   enabled: true
+
+nav:
+  sidebar:
+    enabled: true
+    title: "Notes"
+    collapsible: true
+    collapsed: false
+  tags:
+    enabled: true # or false, default is true
+    limit: 100 # return all tags unless limit is set
+    exclude: [] # a list of specific tags to exclude
+    include: [] # a list of specific tags to include
+    layout: stack
+    order: asc # options include desc, asc, count
+    variant: info # any tag variant

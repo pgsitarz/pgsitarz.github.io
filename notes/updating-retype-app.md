@@ -1,7 +1,7 @@
---
+---
 tags: retype
 visibility: hidden
---
+---
 
 # Updating the Retype app
 
