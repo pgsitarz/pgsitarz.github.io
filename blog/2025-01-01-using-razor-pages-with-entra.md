@@ -4,8 +4,6 @@ visibility: hidden
 
 # Using Razor Pages with Entra
 
-
-
 ```
 public class IndexModel : PageModel
 {

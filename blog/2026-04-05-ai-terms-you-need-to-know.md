@@ -1,6 +1,6 @@
 ---
-#tags:
-    #- AI
+date: 2026-04-05
+tags: [ai]
 ---
 
 # AI Terms You Need to Know: Agents, RAG, ASI & More

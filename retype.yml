@@ -30,11 +30,6 @@ links:
   link: "https://github.com/pgsitarz"
   icon: "mark-github"  
 
-edit:
-  repo: https://github.com/pgsitarz/sitarz-pg/blob
-  base: /
-  label: Edit this page
-
 static: static
 
 brand:
@@ -57,6 +52,19 @@ nav:
     limit: 100 # return all tags unless limit is set
     exclude: [] # a list of specific tags to exclude
     include: [] # a list of specific tags to include
-    layout: stack
+    layout: flex # flex or stack
     order: asc # options include desc, asc, count
     variant: info # any tag variant
+
+blog:
+  layout: page
+  pageSize: 5
+  maxResults: 100
+  title: Blog
+  # 1. Keeps the left sidebar visible while reading a post
+  sidebar: true      
+  # 2. Hides the individual posts from the sidebar menu tree
+  navigation: false  
+  rss:
+    title: Blog Posts
+    description: Latest blog posts

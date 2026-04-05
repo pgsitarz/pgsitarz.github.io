@@ -1,7 +1,3 @@
----
-visibility: hidden
----
-
 # .NET Entity Framework
 
 Here are some of introductory interactions with Entity Framework when working with code first approach.

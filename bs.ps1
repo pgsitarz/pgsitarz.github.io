@@ -1,2 +1,2 @@
 retype build
-retype serve
+retype start
