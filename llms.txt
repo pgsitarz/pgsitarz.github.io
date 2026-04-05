@@ -1,0 +1,5 @@
+﻿#  • sitarz.net
+
+> To help you navigate these tools in the 2026 landscape, here are the most critical "need-to-know" comparisons organized into markup tables.
+
+- [Home](https://pgsitarz.github.io/readme.md): Home
