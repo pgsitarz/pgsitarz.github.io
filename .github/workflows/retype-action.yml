@@ -19,15 +19,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      # This step mimics your local environment's capability to run the dotnet tool
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.x
+          dotnet-version: 8.x 
 
       - name: Build Retype
         uses: retypeapp/action-build@latest
         with:
-          version: 4.5.0-preview.5
+          # This forces the action to run 'dotnet tool install' for this specific version
+          version: 4.5.0-preview5
         env:
           RETYPE_KEY: ${{ secrets.RETYPE_KEY }}
           RETYPE_PASSWORD: ${{ secrets.RETYPE_PASSWORD }}          
