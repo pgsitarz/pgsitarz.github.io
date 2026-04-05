@@ -1,8 +1,7 @@
 input: .
 output: .retype
 
-url: pgsitarz.github.io # Use your website address here
-
+url: pg.sitarz.net # Use your website address here
 
 start:
   # Uncomment the next line to try Retype Pro features
@@ -13,7 +12,7 @@ meta:
 
 head:
   meta:
-    - name: pgsitarz.github.io
+    - name: pg.sitarz.net
       content: ""
     - name: keywords
       content: ""  
