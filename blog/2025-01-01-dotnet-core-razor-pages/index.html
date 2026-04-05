@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview5.828688130304">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 4.5.0-preview5">
+
+    <!-- Primary Meta Tags -->
+    <title>.NET Core Razor Pages • sitarz.net</title>
+    <meta name="title" content=".NET Core Razor Pages • sitarz.net">
+    <meta name="description" content="Part 2 - Add a Model to a Razor Pages App">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://pgsitarz.github.io/blog/2025-01-01-dotnet-core-razor-pages/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://pgsitarz.github.io/sitemap.xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pgsitarz.github.io/blog/2025-01-01-dotnet-core-razor-pages/">
+    <meta property="og:title" content=".NET Core Razor Pages • sitarz.net">
+    <meta property="og:description" content="Part 2 - Add a Model to a Razor Pages App">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://pgsitarz.github.io/blog/2025-01-01-dotnet-core-razor-pages/">
+    <meta name="twitter:title" content=".NET Core Razor Pages • sitarz.net">
+    <meta name="twitter:description" content="Part 2 - Add a Model to a Razor Pages App">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Blog Posts" href="https://pgsitarz.github.io/blog/feed.xml">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://pgsitarz.github.io/blog/2025-01-01-dotnet-core-razor-pages.md">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
+    <link href="../../resources/css/retype.css?v=4.5.0-preview5.828688130304" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.0-preview5.828688130304" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.0-preview5" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.0-preview5.828688130304" data-turbo-eval="false" defer></script>
+
+    <style>
+    a.flex.items-center.justify-center.flex-nowrap.h-16
+    {
+      visibility: hidden;
+    }
+
+    /* Centers the logo when in desktop view */
+    .flex.items-center.px-2.md\:px-6 {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-left-align > div:first-child { 
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* Left-aligns the logo when in mobile view */
+    .container.relative.flex.items-center.justify-between.pr-6.grow.md\:justify-start {
+        padding-left: 0;           
+        justify-content: flex-start; 
+    }
+
+    /* Maintains the top-right shortcuts at top-right when in mobile view */
+    @media (max-width: 991px) {
+        .flex.justify-between.md\:grow {
+            margin-left: auto !important;
+            flex-grow: 0 !important; 
+            display: flex !important;
+            justify-content: flex-end !important;
+        }
+
+        .retype-brand {
+            margin-right: auto !important;
+        }
+    }
+
+    .retype-primary-heading {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+    <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+        <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+            <!-- Mobile menu button skeleton -->
+            <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+            <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+    
+            <!-- Logo -->
+            <div class="flex items-center justify-between h-full py-2 md:w-75">
+                <div class="flex items-center px-2 md:px-6">
+                    <a id="retype-branding-logo" href="https://pgsitarz.github.io/" class="flex items-center leading-snug text-2xl">
+                        <span class="grow-0 shrink-0 overflow-hidden">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="../../imgs/logo.png" alt="" height="40">
+                            <img class="max-h-10 hidden dark:inline-block" src="../../imgs/logo.png" alt="" height="40">
+                        </span>
+                    </a>
+                </div>
+    
+                <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            </div>
+    
+            <div class="flex justify-between md:grow">
+                <!-- Top Nav -->
+                <nav id="retype-header-nav" class="hidden md:flex">
+                    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../../">Home</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/pgsitarz">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/>
+                                </svg>
+                                <span>@pgsitarz</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <div v-cloak class="flex justify-end grow">
+                    <div id="retype-mobile-search-button"></div>
+                    <doc-search-desktop></doc-search-desktop>
+    
+                    <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                    <doc-history></doc-history>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="retype-container" class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        
+            <div class="flex items-center h-16 px-6">
+                <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+            </div>
+        
+            <div class="pl-6 mt-1 mb-4">
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            </div>
+        
+            <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                    <span class="text-xs whitespace-nowrap">Powered by</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Sidebar component -->
+        <doc-sidebar v-cloak>
+            <template #sidebar-footer>
+                <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+        
+                    <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                        <nav>
+                            <ul class="flex flex-wrap justify-center items-center">
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../../">Home</a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/pgsitarz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/>
+                                        </svg>
+                                        <span>@pgsitarz</span>
+                                    </a>
+                                </li>
+        
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </template>
+        </doc-sidebar>
+
+        <div class="grow min-w-0 bg-body-bg">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+<div class="flex">
+    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+        <main class="relative pb-12 lg:pt-2">
+            <div class="relative retype-markdown" id="retype-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Home
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../blog/" class="pr-4">
+                                Blog
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <doc-page-actions></doc-page-actions>
+
+                <!-- Page content  -->
+<h1 id="net-core-razor-pages">.NET Core Razor Pages</h1>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-01-01</span></div>
+</div>
+
+<p>Part 2 - Add a Model to a Razor Pages App</p>
+<ul>
+<li>The tutorial goes over creating a single model class in code</li>
+<li>Creates pages for CRUD for the model</li>
+<li>Created the database from code using Entity Framework migrations
+<ul>
+<li>Add-Migration InitialCreate</li>
+<li>Update-Database</li>
+</ul>
+</li>
+<li>Warnings generated are hidden by the pragma statements or by making the properties nullable.  Alternatively they can be hidden by taking out &lt;Nullable&gt;enabled&lt;/Nullable&gt; out of the project properties files</li>
+<li>Do you need to run anything when updating a model to update the database?  Or just updating both manually takes care of it?</li>
+<li>Excluding keys from scaffolding</li>
+<li>[ScaffoldColumn(false)]</li>
+<li>Excluding this way has to be paired with some mechanism where dates are automatically set within the database (Created and Updated datetime)</li>
+<li>I cleaned up the warnings by removing the &lt;Nullable&gt;Enable&lt;/Nullable&gt; from the csproj file.</li>
+<li></li>
+</ul>
+<p>Part 3 - Scaffolded Razor Pages</p>
+<ul>
+<li>@page directive makes the file an MVC action.  Now it can handle requests.  It means that now we can do razor-specific markup.</li>
+<li>@model directive specifies the model type being passed to the razor page.</li>
+<li>@Html.DisplayNameFor uses inspection to determine the value.</li>
+<li>@Html.DisplayFor uses evaluation to pull property values.</li>
+<li>Pages/Shared/_Layout.cshtml - layout defined in one place and used in multiple pages in the site.
+<ul>
+<li>This _Layout.cshtml sets the layout page for all pages in the Pages folder.</li>
+</ul>
+</li>
+<li>RenderBody() in the layout is a placeholder where page-specific views show up.</li>
+<li>PageModel base class contains the ViewData dictionary which can be used to pass data to a View using a key-value pattern.</li>
+<li>Create page model - .cs file
+<ul>
+<li>A property that uses [BindProperty] attribute opts-in to model binding.  The posted values bind to the property type.</li>
+<li>OnPostAsync runs when page posts form data</li>
+<li>If there are any model errors the form is redisplayed with any data posted</li>
+<li>Most errors can be handled in client-side</li>
+</ul>
+</li>
+<li>Create page - .cshtml file</li>
+<li>Tag helpers
+<ul>
+<li>Form Tag Helper - automatically includes an antiforgery token
+<ul>
+<li>&lt;form method=&quot;post&quot;&gt;</li>
+</ul>
+</li>
+<li>Validation Tag Helper - displays validation errors
+<ul>
+<li>&lt;div asp-validation-summary&gt; and &lt;span asp-validation-for&gt;</li>
+</ul>
+</li>
+<li>Label Tag Helper - generates label caption and [for] attribute
+<ul>
+<li>&lt;label asp-for=&quot;Person.Name&quot; class=&quot;control-label&quot;&gt;&lt;/label&gt;</li>
+</ul>
+</li>
+<li>Input Tag Helper - uses DataAnnotations attributes and produces HTML attributes needed for jQuery Validation on the client side
+<ul>
+<li>&lt;input asp-for=&quot;Person.Name&quot; class=&quot;form-control&quot;&gt;</li>
+</ul>
+</li>
+<li>There is a separate article on tag helpers</li>
+</ul>
+</li>
+</ul>
+<p>Part 4 - Work with a database</p>
+<ul>
+<li>Created the SeedData.cs which gets called on app start</li>
+<li>If database is empty it runs SeeData to populate the database using the code</li>
+</ul>
+<p>Part 5, update the generated pages in an ASP.NET Core app</p>
+<ul>
+<li>Add [Display(Name=”Alternative Field Name”] to a field in the Entity class or model to give the field a name which will display with @Html.GetDisplayFor(“FieldName”)</li>
+<li>This functionality is within System.ComponentModel.DataAnnotations</li>
+<li>Route template
+<ul>
+<li id:int="">Adding &quot;&quot; to the @page directive creates a new route
+<ul>
+<li>i.e. /Jobs/Edit/1</li>
+<li>/jobs/details/1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>When editing an entity that was deleted in the meantime the page will route to NotFound (404) by catching the DbUpdateConcurrencyException exception
+<ul>
+<li>Concurrency exception handling explained in more detail <a href="https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-6.0" class="outbound" target="_blank"><span>here</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
+</ul>
+</li>
+</ul>
+<p>Part 6, add search to ASP.NET Core Razor Pages</p>
+<ul>
+<li>[BindProperty] attribute added to a class variable in the IndexModel class</li>
+<li>[BindProperty] binds form values and query strings with the same name as the property.</li>
+<li>[BindProperty(SupportsGet = true)]</li>
+<li>Adding @page &quot;{searchString?}&quot; to the @page directive now accepts the parameter as part of the url, i.e. /Jobs/Excel will populate SearchString with “Excel”</li>
+<li>Added a drop-down to filter by Delivery Type (Report-Excel, Screen, Report)
+<ul>
+<li>string JobDeliveryType variable in IndexModel used as param</li>
+<li>SelectList DeliveryTypes variable in IndexModel used as a drop-down</li>
+<li>The SelectList is populated within OnGetAsync</li>
+<li>&lt;select&gt; element with asp-items bound to Model.DeliveryTypes in Index.cshtml (this is bound to IndexModel model) and asp-for=”JobDeliveryType”</li>
+<li>Submit button invokes the call to invoke the OnGetAsync</li>
+</ul>
+</li>
+<li>One less in this section is that there are two models
+<ul>
+<li>Database model</li>
+<li>Page model</li>
+</ul>
+</li>
+</ul>
+<p>Part 7, add a new field to a Razor Page in ASP.NET Core</p>
+<ul>
+<li>Trying to see what Code First Migrations can do to speed up development</li>
+<li>Three main approaches to updating the database (from updated model)
+<ol>
+<li>EF to drop database and recreate it - complete data loss</li>
+<li>Manually modify the database using database tools</li>
+<li>Use Code Migrations to update database</li>
+</ol>
+</li>
+</ul>
+<p>Razor Pages with Entity Framework Core in ASP.NET Core - Tutorial 1 of 8<br />
+<a href="https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-6.0&amp;tabs=visual-studio" class="outbound" target="_blank"><span>https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-6.0&amp;tabs=visual-studio</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></p>
+<p>I’m not sure I understand the OnModelCreating method and its purpose.</p>
+<p>In EF to use a foreign key you have to use a variable name that ends with “ID”.  The model doesn’t know which table you’re referencing with this foreign key ID property, it is just of data type integer (int).</p>
+<p>To use the /Edit/1 URL pattern the directive format @page {id:int?} must be added at the top of the CSHTML file.</p>
+<p>Overeposting is when a hacker sends in additional fields to save, even if the fields are not specified in the save form.</p>
+<p>Some interesting topics to review</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/standard/async" class="outbound" target="_blank"><span>Async Overview</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/" class="outbound" target="_blank"><span>Asynchronous Programming with async and await</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
+</ul>
+<p>Only these types of methods, which are sent to the database, are asynchronous:</p>
+<ul>
+<li>ToListAsync</li>
+<li>SingleOrDefaultAsync</li>
+<li>FirstOrDefaultAsync</li>
+<li>SaveChangesAsync</li>
+</ul>
+<p>Queries like .Where(a =&gt; a.LastName == “Smith”) are not asynchronous.  This query does not query a database, it only sets the query logic.</p>
+<p>EF Core context is not thread safe, running operations in parallel will make them overlap.  Make sure any libraries in an app using EF Core are using asynchronous calls with EF.</p>
+<p>Always do .Take(x) when pulling records from the database.  When using paging, use the .Take with a paging row count parameter.</p>
+<p>So for this tutorial I substituted my own app - statscale.app.  For the student entity I have the account entity.  For enrollment I have the job.  So an account can have multiple jobs.</p>
+<p><strong>Statscale relationship model - move this to Statscale spec later on:</strong></p>
+<ul>
+<li>A job can only be linked to one account.  Jobs cannot be co-owned (only shared).
+<ul>
+<li>Relationship: Account 1 : N Job</li>
+</ul>
+</li>
+<li>A job can only be linked to one query.  A single query can be linked to multiple jobs.
+<ul>
+<li>Relationship: Job N : 1 Query</li>
+</ul>
+</li>
+<li>A query can be linked to 1 data source.  1 data source can be linked to multiple queries.
+<ul>
+<li>Relationship: Query N : 1 Data Source.</li>
+</ul>
+</li>
+<li>A single job can have multiple notifications.
+<ul>
+<li>Relationship: Job 1 : N Notifications</li>
+</ul>
+</li>
+<li>A single job can have multiple schedules
+<ul>
+<li>Relationship: Job 1 : N Schedules</li>
+</ul>
+</li>
+</ul>
+<p>Do the account sign in later, for now create all jobs with Account Id = 1.  Code it in the place where a signed in account will be picked up.  Right now it’s in the OnPostAsync of Create.cshtml.cs.</p>
+<p>When creating associations and navigation properties in model classes, and then running migrations, the value in a table’s FK field has to exist in the Id of the referenced table.  Someone pointed this out <a href="https://stackoverflow.com/questions/21839309/the-alter-table-statement-conflicted-with-the-foreign-key-constraint" class="outbound" target="_blank"><span>here</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> after I googled it because the error was not clear.</p>
+<p>After I define the relationships I have to create the dropdowns in the page.</p>
+<p>After messing up my migrations by adding too many changes at once I had to roll them back with Update-Database <em>SpecificMigrationName</em> (from the past) and perform Remove-Migration (no parameters) for each of the bad changes I made when I tried to fix the issue.  This <a href="https://stackoverflow.com/questions/66153253/ef-core-add-migration-issue-how-to-fix-out-of-sync-migration" class="outbound" target="_blank"><span>post</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> helped.</p>
+<p>.Net Core Razor Pages prefers the view model and not the domain model because the latter contains all fields in the UI, whereas the view model only contains the necessary fields.  So far as I understand it’s only used for saving though.</p>
+<p>Creating JobVM to use as saving and editing jobs.  Will have to do the same thing for other entities.  Creating and editing all pages works now with rudimentary relationships set.  They have to be adjusted.  So right now we may have to create the view models for saving and editing.</p>
+<p>Somehow part 2 of this tutorial didn’t cover yet using the view model to do edits, only creates.  It does go over some delete code ideas like printing messages when delete issues come up.</p>
+<p>Naming an entity “History” has some internal conflicts within EF or .Net Core.  An exception bubbles up that I did not try to solve.  “History” seemed to be quite a generic term.  I renamed it to ReportLog because the main importance of logging will be the results of the reports (scheduled or not).</p>
+<p>Keep folder names different from the entity names - i.e. if an entity is singular, make the folder name plural, otherwise this error will come up:</p>
+<ul>
+<li><strong>[xyz]</strong> is a namespace but is used like a type</li>
+</ul>
+<p>Associate a 1-to-many relationship this way in EF and Razor Pages Core app:</p>
+<ol>
+<li>Create the FK ID field in the entity model (FK: ModelNameId) in the entity class (from which the reference is 1) and create the public DataType Table property with the get and set properties</li>
+<li>Build the app (the .exe server will want to restart)</li>
+<li>Add-Migration AddedTableIdFKFromReferringTableModel</li>
+<li>Update-Database</li>
+<li>If this table does not have data already then it will not fail because its data is not referencing the table yet</li>
+<li>Add the navigation property in the model for which the FK in step 1 is referring</li>
+<li>Add-Migration <strong>does not</strong> have to be run because it is only a navigation property, not a database change</li>
+<li></li>
+</ol>
+<p>Standard for page naming is below.  The ViewData[‘Title’] can be assigned the exact name per below (“Statscale |” is prepended automatically):</p>
+<ul>
+<li>Index page - Entity plural, i.e. Reports, Schedules, Data Sources</li>
+<li>Edit page - Edit [Entity Name], i.e. Edit Report</li>
+<li>Details page - [Entity Name] Details, i.e. Report Details</li>
+<li>Delete page - Delete [Entity Name], i.e. Delete Report</li>
+<li>Create page - Create [Entity Name], i.e. Create Report, Create Schedule, etc.</li>
+</ul>
+<p>Each index page:</p>
+<ol>
+<li>Sort by Created then Updated descending date, then by the entity name</li>
+<li>Apply sortable headers on the entity name, created and updated headers, plus any other headers it would make sense to sort</li>
+</ol>
+<p>To add a new entity create the class file, inherit from BaseEntity, and add it to the context.cs.  Don’t create the FK fields yet until the database table is created with the basic fields.</p>
+<p>-- I deleted a few records that were FKs on another table and the whole Index didn’t show up because I had .Include(r =&gt; r.Account) in the OnGetAsync().</p>
+<p>The part 4 talks about removing EnsureCreated but I’ve already removed it a while back because it recreates the entire database each time the app starts up.</p>
+<p>Main ways to deploy database into production:</p>
+<ul>
+<li>Using migrations to create SQL scripts and using the SQL scripts in deployment.</li>
+<li>Running dotnet ef database update from a controlled environment.</li>
+</ul>
+<p>The first option is to create or let software create automated scripts for creating the database.  The second option is to update the database using the dotnet command.</p>
+<p>Chapter 6</p>
+<p>[DataType(DataType.Date)] - this specifies a data type that’s more specific than the database intrinsic type.</p>
+
+                <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
+                
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-05T03:08:34" title="2026-04-05" data-absolute-label="Last updated on 2026-04-05" data-absolute-label-html="Last updated on 2026-04-05" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-04-05
+                    </time>
+                </div>
+
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+            </div>
+            <footer id="retype-content-footer" class="clear-both">
+            
+            </footer>
+        </main>
+
+        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                <div id="retype-footer-links" class="print:hidden">
+                    <ul class="flex flex-wrap items-center text-sm">
+                    </ul>
+                </div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© 2026 sitarz.net. All rights reserved.</p></div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+        </div>
+    </div>
+
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+    <div id="retype-overlay-target"></div>
+
+        <script data-cfasync="false">window.__DOCS__ = { "title": ".NET Core Razor Pages", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/blog/2025-01-01-dotnet-core-razor-pages.md" }</script>
+</body>
+</html>

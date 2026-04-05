@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Posts</title>
+    <link>https://pgsitarz.github.io/blog/</link>
+    <description>Latest blog posts</description>
+    <copyright>© 2026 sitarz.net. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 GMT</lastBuildDate>
+    <generator>Retype 4.5.0-preview5</generator>
+    <atom:link rel="self" type="application/rss+xml" href="https://pgsitarz.github.io/blog/feed.xml" />
+    <image>
+      <title>Blog Posts</title>
+      <link>https://pgsitarz.github.io/blog/</link>
+      <url>https://pgsitarz.github.io/favicon.ico</url>
+    </image>
+    <item>
+      <title>AI Terms You Need to Know: Agents, RAG, ASI &amp; More</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-04-05-ai-terms-you-need-to-know/</guid>
+      <description>Here are a few AI terms that everyone that designs solutions using AI should know.</description>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Automating Email Attachment Uploads to Azure DevOps Work Items via Power Automate</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate/</guid>
+      <description>This article assumes you know how to implement the following steps first:</description>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Updating the Retype app</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-04-05-updating-retype-app/</guid>
+      <description>Here are a few notes on updating the retype app. I originally installed it with the dotnet command, so I have to continue using dotnet to update the retypeapp.</description>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>2026 01 22 few notes from microsoft ai tour in nyc</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-01-22-few-notes-from-microsoft-ai-tour-in-nyc/</guid>
+      <description>To help you navigate these tools in the 2026 landscape, here are the most critical "need-to-know" comparisons organized into markup tables.</description>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Headless CMS Systems - Examples</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-01-22-headless-cms-examples/</guid>
+      <description>Contentful</description>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Clear Browser Network Cache</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache/</guid>
+      <description>Copy and paste the URL below in your browser and then click Clear host cache.</description>
+      <pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>.NET Entity Framework</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-entity-framework-in-net/</guid>
+      <description>Here are some of introductory interactions with Entity Framework when working with code first approach.</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Configuring DocFX</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</guid>
+      <description>Install latest .NET if you haven't yet</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Deploy from Azure DevOps to On-Premise Environment</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-deploy-form-azure-devops-to-on-premise-environment/</guid>
+      <description>With Azure DevOps, you can deploy web or database apps from Azure DevOps to on-premise servers. No changes to the firewall are required, the servers run the agents that will talk to Azure DevOps and perform any updates.</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DevOps for Beginners</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-devops-beginner-course-linkedin/</guid>
+      <description>These are some basic terms to become familiar with when getting into Azure DevOps. The terms relate to code repositories, file versioning, command line interface (CLI), project planning (Azure Boards), project types (process templates), user types (coders or project managers).</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Git Best Practices</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-git-best-practices/</guid>
+      <description>Here are some essential best practices for using Git effectively in your development workflow.</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Git Guide</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-git-guide/</guid>
+      <description>A few handy commands in one handy place.</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Local .NET Development</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-local-net-development/</guid>
+      <description>(This is very much in progress.)</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Power Apps Tips and Notes</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-power-apps-tips-and-notes/</guid>
+      <description>See examples of how other people have used Power Apps to get more from their data.</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Retype Notes</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-retype-notes/</guid>
+      <description>Retype is a static site generator. Just a few notes on it.</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SharePoint Online Governance Guidelines</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/</guid>
+      <description>What's a great sharepoint online governance tool?</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SharePoint Online Wiki Sites</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-wiki-sites/</guid>
+      <description>This quick reference article goes over how to create a simple wiki knowledge base site on SharePoint Online.</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -2,7 +2,88 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pgsitarz.github.io/</loc>
-    <lastmod>2026-04-04T22:49:21Z</lastmod>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/3/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/4/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-04-05-ai-terms-you-need-to-know/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-04-05-updating-retype-app/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-01-22-few-notes-from-microsoft-ai-tour-in-nyc/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-01-22-headless-cms-examples/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-entity-framework-in-net/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-deploy-form-azure-devops-to-on-premise-environment/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-devops-beginner-course-linkedin/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-git-guide/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-local-net-development/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-git-best-practices/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-power-apps-tips-and-notes/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-retype-notes/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-wiki-sites/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/</loc>
@@ -15,9 +96,6 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/sharepoint-online/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/browser-cache/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/docfx/</loc>
@@ -57,5 +135,14 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/wiki/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/browser-cache/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/ai/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/retype/</loc>
   </url>
 </urlset>
