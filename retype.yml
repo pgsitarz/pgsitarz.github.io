@@ -1,7 +1,7 @@
 input: .
 output: .retype
 
-url: pg.sitarz.net # Use your website address here
+url: pg.sitarz.net # Use your website address
 
 start:
   # Uncomment the next line to try Retype Pro features
