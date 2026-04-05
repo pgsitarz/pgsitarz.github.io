@@ -12,7 +12,7 @@ meta:
 
 head:
   meta:
-    - name: pg.sitarz.net
+    - name: pgsitarz.github.io
       content: ""
     - name: keywords
       content: ""  
