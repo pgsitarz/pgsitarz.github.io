@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828669072558">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 4.4.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Programming in C# JumpStart • sitarz.net</title>
+    <meta name="title" content="Programming in C# JumpStart • sitarz.net">
+    <meta name="description" content="1 - Object Oriented Programming, Managed Languages and C#">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://pgsitarz.github.io/notes/programming-c-sharp-jumpstart/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pgsitarz.github.io/notes/programming-c-sharp-jumpstart/">
+    <meta property="og:title" content="Programming in C# JumpStart • sitarz.net">
+    <meta property="og:description" content="1 - Object Oriented Programming, Managed Languages and C#">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://pgsitarz.github.io/notes/programming-c-sharp-jumpstart/">
+    <meta name="twitter:title" content="Programming in C# JumpStart • sitarz.net">
+    <meta name="twitter:description" content="1 - Object Oriented Programming, Managed Languages and C#">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
+    <link href="../../resources/css/retype.css?v=4.4.0.828669072558" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828669072558" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828669072558" data-turbo-eval="false" defer></script>
+
+    <style>
+    a.flex.items-center.justify-center.flex-nowrap.h-16
+    {
+      visibility: hidden;
+    }
+
+    /* Centers the logo when in desktop view */
+    .flex.items-center.px-2.md\:px-6 {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-left-align > div:first-child { 
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* Left-aligns the logo when in mobile view */
+    .container.relative.flex.items-center.justify-between.pr-6.grow.md\:justify-start {
+        padding-left: 0;           
+        justify-content: flex-start; 
+    }
+
+    /* Maintains the top-right shortcuts at top-right when in mobile view */
+    @media (max-width: 991px) {
+        .flex.justify-between.md\:grow {
+            margin-left: auto !important;
+            flex-grow: 0 !important; 
+            display: flex !important;
+            justify-content: flex-end !important;
+        }
+
+        .retype-brand {
+            margin-right: auto !important;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+    <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+        <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+            <!-- Mobile menu button skeleton -->
+            <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+            <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+    
+            <!-- Logo -->
+            <div class="flex items-center justify-between h-full py-2 md:w-75">
+                <div class="flex items-center px-2 md:px-6">
+                    <a id="retype-branding-logo" href="https://pgsitarz.github.io/" class="flex items-center leading-snug text-2xl">
+                        <span class="grow-0 shrink-0 overflow-hidden">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="../../imgs/logo.png" alt="" height="40">
+                            <img class="max-h-10 hidden dark:inline-block" src="../../imgs/logo.png" alt="" height="40">
+                        </span>
+                    </a>
+                </div>
+    
+                <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            </div>
+    
+            <div class="flex justify-between md:grow">
+                <!-- Top Nav -->
+                <nav id="retype-header-nav" class="hidden md:flex">
+                    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../../">Home</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/pgsitarz">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
+                                </svg>
+                                <span>@pgsitarz</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <div v-cloak class="flex justify-end grow">
+                    <div id="retype-mobile-search-button"></div>
+                    <doc-search-desktop></doc-search-desktop>
+    
+                    <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                    <doc-history></doc-history>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="retype-container" class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        
+            <div class="flex items-center h-16 px-6">
+                <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+            </div>
+        
+            <div class="pl-6 mt-1 mb-4">
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            </div>
+        
+            <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                    <span class="text-xs whitespace-nowrap">Powered by</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Sidebar component -->
+        <doc-sidebar v-cloak>
+            <template #sidebar-footer>
+                <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+        
+                    <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                        <nav>
+                            <ul class="flex flex-wrap justify-center items-center">
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../../">Home</a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/pgsitarz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
+                                        </svg>
+                                        <span>@pgsitarz</span>
+                                    </a>
+                                </li>
+        
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </template>
+        </doc-sidebar>
+
+        <div class="grow min-w-0 bg-body-bg">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+<div class="flex">
+    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+        <main class="relative pb-12 lg:pt-2">
+            <div class="retype-markdown" id="retype-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Notebook
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Notes
+                            </span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Page content  -->
+<h1 id="programming-in-c-jumpstart">Programming in C# JumpStart</h1>
+<p>1 - Object Oriented Programming, Managed Languages and C#</p>
+<ul>
+<li>Object oriented language: Encapsulation, Polymorphism, Inheritance
+<ul>
+<li>Encapsulation via
+<ul>
+<li>Unified type system</li>
+<li>Classes and interfaces</li>
+<li>Properties, methods and events</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Encapsulation isn&#x27;t really done with properties.  Object implementation is done via properties.  Methods are a form of encapsulation, but events aren&#x27;t.  Events are just events.</p>
+<ul>
+<li>Managed Language: has services that support the runtime environment (language libraries, i.e. System.Net)</li>
+<li>Managed code is executed by CLR, common language runtime</li>
+<li>CLR manages: memory automatically, exception handling, standard types, security</li>
+<li>Type is the language foundation</li>
+<li>Standard Types
+<ul>
+<li>Type defines what object is
+<ul>
+<li>Metadata based on what Type it is
+<ul>
+<li>memory allocation</li>
+<li>what properties are exposed</li>
+<li>what methods implemented</li>
+<li>levels of access</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Value types directly store values; Reference types store objects, Pointer types (available in unsafe code - talks to memory directly w/o C# system libraries)</li>
+<li>Object metadata: about space allocation and for compile-time type checking</li>
+<li>Features in C#</li>
+</ul>
+<p>![]<a href="data:image/png;base64,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" class="outbound" target="_blank"><span>image1</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></p>
+<ul>
+<li>Generics can help you templetize</li>
+<li>Unified Type System
+<ul>
+<li>Identified all universal or repetitive types, bringing commonality</li>
+</ul>
+</li>
+<li>Inheritance: class may only inherit from one class</li>
+<li>Polymorphism
+<ul>
+<li>Class can be used as its own type</li>
+<li>If you overwrite a virtual method in derived class and cast it back to base class, the derived object method will still be the extended one</li>
+</ul>
+</li>
+<li>C# Productivity
+<ul>
+<li>var keyword (variant)</li>
+<li>Anonymous types
+<ul>
+<li>Not a full definition of type, no name, just a container for variables</li>
+<li>Not shareable outside of class library</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Extension Methods
+<ul>
+<li>Does not break encapsulation, not possible to modify code already in class</li>
+<li>Useful for sealed classes (or not yours)</li>
+<li>Declared as static methods in a static class (first parameter is &quot;this&quot;, a modifier)</li>
+</ul>
+</li>
+<li>Dynamics
+<ul>
+<li>Setting compiler to ignore data type (which isn&#x27;t possible to compile)</li>
+<li>Dangerous because it&#x27;s per environment</li>
+</ul>
+</li>
+<li>Generics</li>
+<li>Boxing
+<ul>
+<li>Take value - treat as an object</li>
+<li>Expensive computationally - doubling memory space (value and copying value to point an object to it)</li>
+<li>hard to keep track what&#x27;s going on</li>
+<li>When do you have to do it?
+<ul>
+<li>Avoid using in loops</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>2 - Constructing Complex Types</p>
+<ul>
+<li>Classes
+<ul>
+<li>Hold data (properties)</li>
+<li>Do something with data (methods)</li>
+<li>Raise events
+<ul>
+<li>EventHandler (defines the shape of a method that event expects to be handling when you raise it)
+<ul>
+<li>ie: public event EventHandler HasSpoken;</li>
+<li>&quot;event&quot; access modifier</li>
+<li>EventHandler is a delegate</li>
+<li>If no one is listening (nobody has subscribed) and you call the event, a null is returned</li>
+<li>Common class for handling events (more interested in handling an event rather than data that&#x27;s passed per se)</li>
+<li>i.e. After data is loaded raise an event to indicate it is done (instead of passing data around)</li>
+<li>Many listeners can be tied to one event</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Declare event handler:</strong></p>
+<p><strong>public event EventHandler HasSpoken;</strong></p>
+<p><strong>Subscribe to event handler:</strong></p>
+<p><strong>dog.HasSpoken += dog_HasSpoken(object sender, EventArgs args)</strong></p>
+<ul>
+<li>EventHandler has to be specified in a class</li>
+<li>Instance of a class subscribes to it by setting a method name to call when event occurs</li>
+</ul>
+<p><strong>EventListener1 &gt; listening on event1</strong></p>
+<p><strong>EventListener2 &gt; listening on event1</strong></p>
+<p><strong>EventListener3 &gt; listening on event1</strong></p>
+<p>Then event HasSpoken is called, and the 3 EventListeners invoke their methods upon that event because they were listening.</p>
+<ul>
+<li>Inheritance
+<ul>
+<li>If you cast up to base class, you don&#x27;t lose properties of subclass (they&#x27;re there but hidden)</li>
+<li>If you cast up, you change shape of the object (not its &quot;essence&quot; or its current state)</li>
+</ul>
+</li>
+</ul>
+<p><strong>internal class BaseClass</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">**{**
+
+    **internal virtual void Name()**
+
+    **{**
+
+        **Console.WriteLine(&quot;BaseClass&quot;);**
+
+    **}**
+
+**}**
+
+**internal class DerivedOverride : BaseClass**
+
+**{**
+
+    **internal override void Name()**
+
+    **{**
+
+        **Console.WriteLine(&quot;DerivedClass&quot;);**
+
+    **}**
+
+**}**
+
+**internal class DerivedNew : BaseClass**
+
+**{**
+
+    **internal new void Name()**
+
+    **{**
+
+        **Console.WriteLine(&quot;DerivedNew&quot;);**
+
+    **}**
+
+**}**
+
+**internal class DerivedOverwrite : BaseClass**
+
+**{**
+
+    **internal void Name()**
+
+    **{**
+
+        **Console.WriteLine(&quot;DerivedOverwrite&quot;);**
+
+    **}**
+
+**}**</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Reason for overriding
+<ul>
+<li>Add additional operations for a specific i.e. database that didn&#x27;t exist in base class
+<ul>
+<li>Even if casted up to base class, this instance will still have the new capabilities for the new database
+<ul>
+<li>In this case call base.method() if needing to use base functionality also</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Generics
+<ul>
+<li>Replaces the need for implementing functionality for a specific type</li>
+<li>You can implement the functionality for all types</li>
+<li>New concept of type parameters</li>
+</ul>
+</li>
+<li>Boxing / Unboxing
+<ul>
+<li>Boxing
+<ul>
+<li>Casting into a reference type from value type</li>
+<li>Doubling on memory</li>
+<li>Hard time keeping track</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Important point on boxing using an example:</p>
+<p><strong>int count = 1;</strong></p>
+<p><strong>object countReference = count;</strong></p>
+<p>The countReference has its own copy of the count value.  If you increment count integer the countReference won&#x27;t reflect it.  The object countReference doubled the memory used up by using this one variable.</p>
+<ul>
+<li><strong>foreach</strong> works with IEnumerable collections</li>
+<li>Casting or checking data type
+<ul>
+<li>var d = dog as Dog;</li>
+<li>var d = (Dog)dog;</li>
+<li>i.e.: if dog is Dog</li>
+</ul>
+</li>
+<li>String, StringBuilder
+<ul>
+<li>Any methods used with strings create a new string object</li>
+</ul>
+</li>
+<li>Regular Expressions (text namespace)
+<ul>
+<li>create patterns...</li>
+</ul>
+</li>
+</ul>
+<p>4 - Features of C#</p>
+<p>code reflection</p>
+<p>window into object metadata and allows us to use it programmatically</p>
+<p>isn&#x27;t free, use it with &quot;care&quot;</p>
+<p>using reflection we interrogate objects</p>
+<p>Activator.CreateInstance</p>
+<p>Getting reflection data</p>
+<p>1. Type y = x.GetType();</p>
+<p>2. typeof(x);</p>
+<p>PropertyInfo - datatype for properties of class</p>
+<p>using .Equals when comparing strings:</p>
+<p>.Equals(&quot;sampleString&quot;, StringComparison.InvariantCulture);</p>
+<p>You can work with generics using reflection.</p>
+<p><strong>working with garbage collection</strong></p>
+<p>-automatic mem mgmt / clr</p>
+<p>-doesn&#x27;t do it right away (for performance)</p>
+<p>--objects used for short time, get collected quicker</p>
+<p>--objects living for a long time, get collected slower</p>
+<p>--gc targets easy ones first, then harder ones later</p>
+<p>--gc is automatic, but we can influence</p>
+<p>--gc is expensive, per algorithm</p>
+<p>--gc runs when it detects pressure</p>
+<p><strong>// just collecting...everything stops...while collecting</strong></p>
+<p><strong>GC.Collect();</strong></p>
+<p><strong>// waits for processes to finish, calling finalizers (what does that mean?) before it collects again</strong></p>
+<p><strong>GC.WaitForPendingFinalizers();</strong></p>
+<p><strong>// collects ones that finalized?</strong></p>
+<p><strong>GC.Collect();</strong></p>
+<p>starting up gc is &quot;calling in a lion to eat up other animal orphans!&quot; :P</p>
+<p><strong>disposable patterns</strong></p>
+<p><strong>IDisposable</strong> - allows us to implement, marks up an object, pre-emptively dispose itself prior to gc</p>
+<p>makes you implement Dispose() method</p>
+<p>~ConstructorName:</p>
+<p>-generally used to implement IDisposable</p>
+<p>Disposed object is unusable.</p>
+<p><strong>using</strong> will call Dispose() at the end</p>
+<p>1. Close - things that you&#x27;ve opened, ie file</p>
+<p>2. Dispose - superset of close, if you dispose you should close, but also set things to null (?)</p>
+<p>3. Stop - i.e. timer, to stop a timer, restart a timer, but maintains its state</p>
+<p><strong>memory leaks</strong></p>
+<p>- managed memory leaks</p>
+<p>- out of scope objects (still referenced)...are memory leaks</p>
+<p>- unsubscribe from events proactively (they can be leaks)</p>
+<p>5 - Advanced C#...</p>
+<p><strong>type &amp; value validation</strong></p>
+<p>as a developer trust nobody/nothing coming into the system, to prevent:</p>
+<p>-overflow....???</p>
+<p>-incorrect results</p>
+<p>-side-effects</p>
+<p>-security intrusions</p>
+<p>and provide guidance to systems or users</p>
+<ul>
+<li>Data validation</li>
+<li>Validate object type is correct</li>
+<li>Debug / trace Assert() methods</li>
+</ul>
+<p>couple of examples, ie:</p>
+<p>1. if(string.IsNullOrWhiteSpace(value)){ throw new ArguementNullException(&quot;value&quot;); }</p>
+<p>2. if(value == this.Name) { throw new ArguementException(&quot;value is duplicate&quot;); }</p>
+<p>throw exceptions of type:</p>
+<p>-ArguementNullException</p>
+<p>-ArgumentException</p>
+<p>-NotSupportedException</p>
+<p>-Exception</p>
+<p>-NotImplementedException</p>
+<p><strong>data contracts</strong></p>
+<p>&quot;design by contract&quot;</p>
+<p>-predefine how to interact with methods, properties</p>
+<p>-predicate indicates membership is true</p>
+<p>-predicate is a contract</p>
+<p>Contract.Requires(!string.IsNullOrWhiteSpace(value), &quot;value is empty &quot;);</p>
+<p>this.Name = value;</p>
+<p>Contract.Ensures(!string.IsNullOrWhiteSpace(Contract.Result&lt;string&gt;()))r;</p>
+<p>Contract.EndContractBlock(); // any validation above it makes it a contract...any violations become contract exceptions...  awesome?</p>
+<p>Basic approach to data validation?</p>
+<p>Handle events from contract validation (can be ignored).</p>
+<p><strong>unhandled exceptions</strong> - exception thrown outside of try block</p>
+<p>-in wpf / desktop environments, an event gets raised when unhandled exception occurs (you can trap on that level)</p>
+<p>-specific exception catches give you ability to tell what went wrong (use it!)</p>
+<p>-then use a bucket to catch others..., i.e.: catch (Exception e)</p>
+<p>-finally..is a promise, no matter what happens, finally block will run</p>
+<p>-in finally you can check if anything in try went wrong and rectify... i.e. close all opened files in try block (that were left open when exception occurred)</p>
+<p><strong>encryption techniques</strong> - take encryption and making it unreadable</p>
+<p>-not really about security</p>
+<p>-you can encrypt manually from file properties &gt; advanced</p>
+<p>-hashing...value derived from content</p>
+<p><strong>6 - Splitting assemblies, WinMD, Diagnostics</strong></p>
+<p><strong>assemblies and namespaces</strong></p>
+<p>Project : assembly (1:1), single file, whatever your project ends up being (exe, dll, winmd - windows component)</p>
+<p>Namespace - logical grouping of code, can span multiple assemblies, a scope</p>
+<p>Assembly can be digitally signed</p>
+<p>Example of same namespace in multiple assemblies:</p>
+<p>-base code of app</p>
+<p>-unit tests</p>
+<p>Components, dlls, are installed into global assembly cache.  GAC replaces having to register in COM days.</p>
+<p>You can use GPO (group policy) to deploy assemblies in the GAC.</p>
+<p><strong>sharing assemblies</strong></p>
+<p>-class libraries - assemblies that can be shared</p>
+<p>-portable class libraries - assemblies to share across OSs</p>
+<p>-WinMD/Windows Metadata - for windows store apps to be shared across languages</p>
+<p><strong>diagnostics instrumentation</strong></p>
+<p>instrumentation - code reporting performance</p>
+<p>telemetry - gathers instruments for analysis</p>
+<p>analysis - using telemetry to track error trends</p>
+<p>not making things faster, but better</p>
+<p>establish a baseline, to base whether things are slow or not</p>
+<p>.net windows has telemetry</p>
+<p><strong>performance counters</strong></p>
+<p>have to have permissions to do performance counters</p>
+<p>var perfCounter = new PerformanceCounter</p>
+<p>{</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">CategoryName \= category,
+
+CounterName \= counter,
+
+MachineName \= machine,
+
+ReadOnly \= false</code></pre>
+</doc-codeblock></div>
+<p>}</p>
+<p>perfCounter.IncrementBy(10);</p>
+<p>Tracing - info msgs during regular runtime</p>
+<p>Event logs -</p>
+<p>1/ user logged in</p>
+<p>2/ invoice submitted</p>
+<p>etc, great way to see what&#x27;s going on</p>
+<p>Write stacktrace in the event log</p>
+<p>To do diagnostics...go to:</p>
+<p>Analyze &gt; Launch Performance Wizard &gt; Instrumentation &gt; select project</p>
+<p>Now it&#x27;s capturing instrumentation outputs (profiling)</p>
+<p>(Observing might change what&#x27;s being observed)</p>
+<p>Hot paths - methods that take longest... (sorted longest on top)</p>
+<p>Compilers smartly optimize the code, so human looking at code sometimes can&#x27;t be right determining something&#x27;s slow - instead run analysis first.</p>
+<p>Do profile analysis in release build to <strong>production (true environment)</strong>.</p>
+<p>When you change build in VS you change build configuration you change optimization, which changes execution path behind the scenes.</p>
+<p>Control when to write to performance counters.</p>
+<p><strong>Questions</strong></p>
+<ol>
+<li>What are Optional Args?</li>
+<li>What is Covariance?</li>
+<li>What is Caller Attr?</li>
+<li>What&#x27;s the shortcut for duplicating a method?</li>
+<li>Is it possible to use Generics with Interfaces?  How?
+<ol>
+<li>If a class implements an interface (has specific methods), can a generic class taking in a specific type (that implements that interface, and do something specific?</li>
+<li>Meaning can a generic class be a class that takes in a type that implements something and do operations on that type calling that instances methods? (because it implemented that specific interface)?</li>
+</ol>
+</li>
+</ol>
+
+                <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
+                
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-04T21:13:41" title="2026-04-04" data-absolute-label="Last updated on 2026-04-04" data-absolute-label-html="Last updated on 2026-04-04" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                        Last updated on 2026-04-04
+                    </time>
+                </div>
+
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+            </div>
+            <footer id="retype-content-footer" class="clear-both">
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-14">
+                    <a id="retype-edit-this-page" class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-body-link font-body-link hover:text-body-link-hover hover:underline" href="https://github.com/pgsitarz/sitarz-pg/blob/main/notes/programming-c-sharp-jumpstart.md" target="_blank" rel="noopener">
+                        <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                        <span>Edit this page</span>
+                    </a>
+                </div>
+            
+            </footer>
+        </main>
+
+        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                <div id="retype-footer-links" class="print:hidden">
+                    <ul class="flex flex-wrap items-center text-sm">
+                    </ul>
+                </div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© 2026 sitarz.net. All rights reserved.</p></div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+        </div>
+    </div>
+
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+    <div id="retype-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Programming in C# JumpStart", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>

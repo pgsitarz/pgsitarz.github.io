@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pgsitarz.github.io/sitemap.xml.gz
