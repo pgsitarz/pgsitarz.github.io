@@ -1,14 +1,14 @@
 input: .
 output: .retype
 
-url: pg.sitarz.net # Use your website address here
+url: pgsitarz.github.io # Use your website address here
 
 start:
   # Uncomment the next line to try Retype Pro features
   pro: true
 
 meta:
-  title: " • sitarz.net"
+  title: " • pg.sitarz.net"
 
 head:
   meta:
