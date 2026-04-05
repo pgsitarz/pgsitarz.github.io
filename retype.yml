@@ -1,0 +1,47 @@
+input: .
+output: .retype
+
+url: pg.sitarz.net # Use your website address here
+
+start:
+  # Uncomment the next line to try Retype Pro features
+  # pro: true
+
+meta:
+  title: " • sitarz.net"
+
+head:
+  meta:
+    - name: pg.sitarz.net
+      content: ""
+    - name: keywords
+      content: ""  
+
+branding:
+  logo: imgs/logo.png
+  logoDark: imgs/logo.png
+  logoHeight: 40
+
+links:
+- text: Home
+  link: /
+
+- text: "@pgsitarz"
+  link: "https://github.com/pgsitarz"
+  icon: "mark-github"  
+
+edit:
+  repo: https://github.com/pgsitarz/sitarz-pg/blob
+  base: /
+  label: Edit this page
+
+static: static
+
+brand:
+  favicon: /static/favicon.ico
+
+footer:
+  copyright: "&copy; {{ year }} sitarz.net. All rights reserved."
+
+templating:
+  enabled: true

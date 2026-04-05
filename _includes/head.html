@@ -1,0 +1,38 @@
+<style>
+a.flex.items-center.justify-center.flex-nowrap.h-16
+{
+  visibility: hidden;
+}
+
+/* Centers the logo when in desktop view */
+.flex.items-center.px-2.md\:px-6 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-left-align > div:first-child { 
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Left-aligns the logo when in mobile view */
+.container.relative.flex.items-center.justify-between.pr-6.grow.md\:justify-start {
+    padding-left: 0;           
+    justify-content: flex-start; 
+}
+
+/* Maintains the top-right shortcuts at top-right when in mobile view */
+@media (max-width: 991px) {
+    .flex.justify-between.md\:grow {
+        margin-left: auto !important;
+        flex-grow: 0 !important; 
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+
+    .retype-brand {
+        margin-right: auto !important;
+    }
+}
+</style>
