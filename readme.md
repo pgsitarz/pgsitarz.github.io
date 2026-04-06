@@ -7,9 +7,9 @@ icon: home
 
 https://www.youtube.com/watch?v=umRy69br51E
 
+## Latest posts
+
 {{ for post in content.blog.posts | array.limit 4 ~}}
 [!card vert]({{ post.filePath }})
 {{ end }}
-
-
 

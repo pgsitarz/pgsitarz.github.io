@@ -1,4 +1,4 @@
-## Few notes from Microsoft AI Tour in NYC
+## Microsoft AI Tour in NYC Notes (2026)
 
 To help you navigate these tools in the 2026 landscape, here are the most critical "need-to-know" comparisons organized into markup tables.
 
