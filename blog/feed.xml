@@ -6,7 +6,7 @@
     <description>Latest blog posts</description>
     <copyright>© 2026 sitarz.net. All rights reserved.</copyright>
     <lastBuildDate>Sun, 05 Apr 2026 00:00:00 GMT</lastBuildDate>
-    <generator>Retype 4.5.0-preview5</generator>
+    <generator>Retype 4.5.0-preview6</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://pgsitarz.github.io/blog/feed.xml" />
     <image>
       <title>Blog Posts</title>
@@ -35,12 +35,6 @@
       <title>2026 01 22 few notes from microsoft ai tour in nyc</title>
       <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-01-22-few-notes-from-microsoft-ai-tour-in-nyc/</guid>
       <description>To help you navigate these tools in the 2026 landscape, here are the most critical "need-to-know" comparisons organized into markup tables.</description>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Headless CMS Systems - Examples</title>
-      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-01-22-headless-cms-examples/</guid>
-      <description>Contentful</description>
       <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
     </item>
     <item>

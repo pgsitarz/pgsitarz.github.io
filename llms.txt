@@ -9,7 +9,6 @@
 - [Automating Email Attachment Uploads to Azure DevOps Work Items via Power Automate](https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate.md): This article assumes you know how to implement the following steps first:
 - [Updating the Retype app](https://pgsitarz.github.io/blog/2026-04-05-updating-retype-app.md): Here are a few notes on updating the retype app. I originally installed it with the dotnet command, so I have to continue using dotnet to update the retypeapp.
 - [2026 01 22 few notes from microsoft ai tour in nyc](https://pgsitarz.github.io/blog/2026-01-22-few-notes-from-microsoft-ai-tour-in-nyc.md): To help you navigate these tools in the 2026 landscape, here are the most critical "need-to-know" comparisons organized into markup tables.
-- [Headless CMS Systems - Examples](https://pgsitarz.github.io/blog/2026-01-22-headless-cms-examples.md): Contentful
 - [Clear Browser Network Cache](https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache.md): Copy and paste the URL below in your browser and then click Clear host cache.
 - [.NET Entity Framework](https://pgsitarz.github.io/blog/2025-01-01-entity-framework-in-net.md): Here are some of introductory interactions with Entity Framework when working with code first approach.
 - [Configuring DocFX](https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx.md): Install latest .NET if you haven't yet
