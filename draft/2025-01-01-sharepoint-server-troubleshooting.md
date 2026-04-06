@@ -1,9 +1,3 @@
----
-tags:
-  - sharepoint-server
-visibility: hidden  
----
-
 # SharePoint Server Troubleshooting
 
 1. Log into the server and run PowerShell with SharePoint shell permissions
