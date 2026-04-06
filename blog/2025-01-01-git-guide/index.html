@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview6.828753673895">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview6.828755366568">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.0-preview6">
@@ -41,12 +41,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.5.0-preview6.828753673895" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.5.0-preview6.828755366568" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.0-preview6.828753673895" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.0-preview6.828755366568" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.0-preview6" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.0-preview6.828753673895" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.5.0-preview6.828753673895" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.0-preview6.828755366568" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.5.0-preview6.828755366568" defer></script>
 
     <style>
     a.flex.items-center.justify-center.flex-nowrap.h-16
@@ -402,6 +402,77 @@ git push ...</code></pre>
 <ul>
 <li><a href="https://www.atlassian.com/git/tutorials/saving-changes/gitignore" target="_blank">Atlassian .gitignore file notes</a></li>
 </ul>
+<h1 id="git-best-practices">Git Best Practices</h1>
+<p>Here are some essential best practices for using Git effectively in your development workflow.</p>
+<h2 id="commit-messages">Commit Messages</h2>
+<ul>
+<li>Write clear, concise commit messages that explain WHY the change was made</li>
+<li>Use the imperative mood (&quot;Add feature&quot; not &quot;Added feature&quot;)</li>
+<li>Keep the first line under 50 characters</li>
+<li>Add detailed description after a blank line if needed</li>
+</ul>
+<h2 id="branching-strategy">Branching Strategy</h2>
+<ul>
+<li>Use feature branches for new development</li>
+<li>Keep <code translate="no" v-pre>main</code> or <code translate="no" v-pre>master</code> branch stable</li>
+<li>Delete branches after merging</li>
+<li>Use meaningful branch names (e.g., <code translate="no" v-pre>feature/user-auth</code>, <code translate="no" v-pre>bugfix/login-error</code>)</li>
+</ul>
+<h2 id="commits">Commits</h2>
+<ul>
+<li>Make atomic commits (one logical change per commit)</li>
+<li>Commit early and often</li>
+<li>Don&#x27;t commit incomplete work</li>
+<li>Don&#x27;t commit generated files or dependencies</li>
+</ul>
+<h2 id="pull-requests">Pull Requests</h2>
+<ul>
+<li>Keep PRs focused and small</li>
+<li>Write descriptive PR titles and descriptions</li>
+<li>Include testing details and screenshots if relevant</li>
+<li>Request reviews from appropriate team members</li>
+</ul>
+<h2 id="git-workflow">Git Workflow</h2>
+<ul>
+<li>Pull/fetch before starting new work</li>
+<li>Regularly push to remote to backup your work</li>
+<li>Use <code translate="no" v-pre>git status</code> before commits to review changes</li>
+<li>Resolve conflicts promptly</li>
+</ul>
+<h2 id="security">Security</h2>
+<ul>
+<li>Never commit sensitive data (passwords, API keys, tokens)</li>
+<li>Use <code translate="no" v-pre>.gitignore</code> properly</li>
+<li>Consider using git-secrets or similar tools</li>
+<li>Keep your Git client and tools updated</li>
+</ul>
+<h2 id="code-review">Code Review</h2>
+<ul>
+<li>Review your own changes before committing</li>
+<li>Use <code translate="no" v-pre>git diff</code> to verify changes</li>
+<li>Consider using pre-commit hooks for quality checks</li>
+<li>Address review comments promptly</li>
+</ul>
+<h2 id="maintenance">Maintenance</h2>
+<ul>
+<li>Regularly clean up old branches</li>
+<li>Use <code translate="no" v-pre>git rebase</code> to maintain a clean history</li>
+<li>Archive old repositories if no longer active</li>
+<li>Document repository-specific conventions</li>
+</ul>
+<h2 id="tags-and-releases">Tags and Releases</h2>
+<ul>
+<li>Use semantic versioning for tags</li>
+<li>Tag significant releases</li>
+<li>Include release notes for major versions</li>
+<li>Keep release branches for major versions</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://git-scm.com/doc" class="outbound" target="_blank"><span>Git Documentation</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
+<li><a href="https://guides.github.com/" class="outbound" target="_blank"><span>GitHub Guides</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
+<li><a href="https://www.conventionalcommits.org/" class="outbound" target="_blank"><span>Conventional Commits</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
+</ul>
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                     <span>
@@ -416,7 +487,7 @@ git push ...</code></pre>
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-05T03:08:34" title="2026-04-05" data-absolute-label="Last updated on 2026-04-05" data-absolute-label-html="Last updated on 2026-04-05" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-05T21:49:10" title="2026-04-05" data-absolute-label="Last updated on 2026-04-05" data-absolute-label-html="Last updated on 2026-04-05" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-04-05
                     </time>
                 </div>
@@ -428,11 +499,11 @@ git push ...</code></pre>
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../blog/2025-01-01-git-best-practices/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../blog/2025-01-01-getting-started-with-azure-data-workloads/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Newer</span>
-                                <span class="block mt-1">Git Best Practices</span>
+                                <span class="block mt-1">Getting Started with Azure Data Workloads</span>
                             </span>
                         </a>
                     </div>

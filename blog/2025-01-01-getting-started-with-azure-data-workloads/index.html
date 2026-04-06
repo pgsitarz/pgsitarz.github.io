@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview6.828753673895">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview6.828755366568">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.0-preview6">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Getting Started with Azure Data Workloads • pg.sitarz.net</title>
     <meta name="title" content="Getting Started with Azure Data Workloads • pg.sitarz.net">
-    <meta name="description" content="Types of Data">
+    <meta name="description" content="Structured data">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://pgsitarz.github.io/blog/2025-01-01-getting-started-with-azure-data-workloads/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pgsitarz.github.io/blog/2025-01-01-getting-started-with-azure-data-workloads/">
     <meta property="og:title" content="Getting Started with Azure Data Workloads • pg.sitarz.net">
-    <meta property="og:description" content="Types of Data">
+    <meta property="og:description" content="Structured data">
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://pgsitarz.github.io/blog/2025-01-01-getting-started-with-azure-data-workloads/">
     <meta name="twitter:title" content="Getting Started with Azure Data Workloads • pg.sitarz.net">
-    <meta name="twitter:description" content="Types of Data">
+    <meta name="twitter:description" content="Structured data">
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Blog Posts" href="https://pgsitarz.github.io/blog/feed.xml">
@@ -41,11 +41,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.5.0-preview6.828753673895" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.5.0-preview6.828755366568" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.0-preview6.828753673895" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.0-preview6.828755366568" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.0-preview6" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.0-preview6.828753673895" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.0-preview6.828755366568" data-turbo-eval="false" defer></script>
 
     <style>
     a.flex.items-center.justify-center.flex-nowrap.h-16
@@ -224,6 +224,14 @@
                             <a href="../../blog/" class="pr-4">
                                 Blog
                             </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../blog/2025-01-01-getting-started-with-azure-data-workloads/" class="pr-4">
+                                Getting Started with Azure Data Workloads
+                            </a>
                         </li>
                     </ol>
                 </nav>
@@ -236,7 +244,7 @@
     <div class="flex items-center shrink-0">Published&nbsp;<span>2025-01-01</span></div>
 </div>
 
-<p>Types of Data</p>
+<h2 id="types-of-data">Types of Data</h2>
 <ul>
 <li>Structured data
 <ul>
@@ -247,10 +255,13 @@
 <li>Foreign keys are reference keys to other tables</li>
 </ul>
 </li>
-<li>Unstructured data</li>
+<li>Unstructured data
+<ul>
 <li>Videos, images, audio files</li>
 <li>Harder to interpret using a computer system</li>
 <li>Analysis of images - gives structured or semi-structured data</li>
+</ul>
+</li>
 <li>Semi-structured data
 <ul>
 <li>Has some observable structure</li>
@@ -259,18 +270,8 @@
 <li>Not tabular in nature</li>
 </ul>
 </li>
-<li>Structured data
-<ul>
-<li>CRM/ERP systems</li>
-<li>Admin systems</li>
-<li>Tabular
-<ul>
-<li>Data is organized in tables</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>Relational and Non-relational Databases
+<h2 id="relational-and-non-relational-databases">Relational and Non-relational Databases</h2>
 <ul>
 <li>Store data in tables</li>
 <li>Interacting with data using SQL</li>
@@ -283,13 +284,11 @@
 <li>PostgreSQL - free but more complex</li>
 </ul>
 </li>
-</ul>
-</li>
 <li>Non-relational databases
 <ul>
 <li>No tables used</li>
 <li>Collections or containers used</li>
-<li>Don’t follow predefined schema</li>
+<li>Don&#x27;t follow predefined schema</li>
 <li>Types
 <ul>
 <li>Document databases (XML, JSON)</li>
@@ -307,31 +306,30 @@
 </li>
 </ul>
 </li>
-<li>Transactional vs. Analytical Workloads
+</ul>
+<h2 id="transactional-vs-analytical-workloads">Transactional vs. Analytical Workloads</h2>
 <ul>
 <li>ACID properties</li>
 <li>Committing a transaction means it is final</li>
 <li>Two transactions mutating the same record</li>
 <li>ACID
 <ul>
-<li>*Atomicity - unsplittable</li>
-<li>Consistency state - consistent state before and after transaction</li>
-<li>*Isolation - all transactions should be executed</li>
-<li>Durability - once transaction is committed, database should guarantee the data will persist</li>
-<li>Atomicity &amp; Isolation are the most difficult</li>
+<li>Atomicity: All operations in a transaction succeed or all fail</li>
+<li>Consistency: The database remains in a consistent state before and after the transaction</li>
+<li>Isolation: Transactions are executed independently</li>
+<li>Durability: Once committed, changes are permanent</li>
+<li>Atomicity and Isolation are the most challenging to implement</li>
 </ul>
 </li>
 <li>Analytical workloads
 <ul>
-<li>Low volume of reads</li>
-<li>Large amount of date</li>
-<li>Warehousing is also called OLAP (online analytical processing)</li>
+<li>High volume of reads</li>
+<li>Large volumes of data</li>
+<li>Warehousing is also called OLAP (Online Analytical Processing)</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<p>Batch &amp; Streaming Data</p>
+<h2 id="batch--streaming-data">Batch &amp; Streaming Data</h2>
 <ul>
 <li>Batch data
 <ul>
@@ -340,8 +338,8 @@
 <li>All data is stored for analytical querying</li>
 <li>You query the data after loading</li>
 <li>Easy joining of datasets</li>
-<li><strong>Efficiency opportunities</strong></li>
-<li><strong>Aligns with existing skills (with more traditional database schemas)</strong></li>
+<li>Efficiency opportunities</li>
+<li>Aligns with existing skills (with more traditional database schemas)</li>
 </ul>
 </li>
 <li>Streaming data
@@ -372,7 +370,7 @@
 <li>New update whenever an order is placed</li>
 <li>Azure Event Hub
 <ul>
-<li>Can messages to more than 1 consumer
+<li>Can send messages to more than 1 consumer
 <ul>
 <li>Azure SQL DB</li>
 <li>Stream Analytics</li>
@@ -387,7 +385,7 @@
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-05T03:08:34" title="2026-04-05" data-absolute-label="Last updated on 2026-04-05" data-absolute-label-html="Last updated on 2026-04-05" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
+                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-04-05T21:49:10" title="2026-04-05" data-absolute-label="Last updated on 2026-04-05" data-absolute-label-html="Last updated on 2026-04-05" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
                         Last updated on 2026-04-05
                     </time>
                 </div>
@@ -397,6 +395,27 @@
             </div>
             <footer id="retype-content-footer" class="clear-both">
             
+                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../blog/2025-01-01-devops-beginner-course-linkedin/">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                            <span>
+                                <span class="block text-xs font-normal text-base-text-muted">Newer</span>
+                                <span class="block mt-1">Dev​Ops for Beginners</span>
+                            </span>
+                        </a>
+                    </div>
+            
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../blog/2025-01-01-git-guide/">
+                            <span>
+                                <span class="block text-xs font-normal text-right text-base-text-muted">Older</span>
+                                <span class="block mt-1">Git Guide</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                        </a>
+                    </div>
+                </nav>
             </footer>
         </main>
 

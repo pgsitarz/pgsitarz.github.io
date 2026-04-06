@@ -1,499 +1,499 @@
 # Microsoft 365 Fundamentals
 
-* Deployment models  
-  * Public Cloud  
-    * Cloud service provided by third-party provider  
-  * Private Cloud  
-    * Hardware is only used by single company  
-  * Hybrid  
-    * Combination of public and private with orchestration between the two  
-  * Community Cloud  
-    * Infrastructure is shared between several organizations with similar security concerns  
-* Types of cloud computing services  
-  * On-premises  
-  * Infrastructure as a Service (IaaS)  
-  * Platform as a Service (PaaS)  
-  * Software as a Service (SaaS)  
-    * On the web browser and readily available  
-* Most popular cloud providers  
-  * IaaS  
-    * Microsoft Azure  
-    * Amazon Web Services  
-    * Google Compute Engine  
-  * PaaS  
-    * Azure Logic Apps  
-    * Heroku  
-    * Amazon Elastic Beanstalk  
-  * SaaS  
-    * Office 365  
-    * Google G Suite  
-    * Salesforce  
-    * Dropbox  
-* Cloud computing as a utility  
-* Rapid elasticity  
-* Billed per second, minute or hour
+- Deployment models  
+  - Public Cloud  
+    - Cloud service provided by third-party provider  
+  - Private Cloud  
+    - Hardware is only used by single company  
+  - Hybrid  
+    - Combination of public and private with orchestration between the two  
+  - Community Cloud  
+    - Infrastructure is shared between several organizations with similar security concerns  
+- Types of cloud computing services  
+  - On-premises  
+  - Infrastructure as a Service (IaaS)  
+  - Platform as a Service (PaaS)  
+  - Software as a Service (SaaS)  
+    - On the web browser and readily available  
+- Most popular cloud providers  
+  - IaaS  
+    - Microsoft Azure  
+    - Amazon Web Services  
+    - Google Compute Engine  
+  - PaaS  
+    - Azure Logic Apps  
+    - Heroku  
+    - Amazon Elastic Beanstalk  
+  - SaaS  
+    - Office 365  
+    - Google G Suite  
+    - Salesforce  
+    - Dropbox  
+- Cloud computing as a utility  
+- Rapid elasticity  
+- Billed per second, minute or hour
 
-3 \- Overview of Microsoft’s Cloud Services
+## 3 - Overview of Microsoft's Cloud Services
 
-* Introduction to Microsoft 365  
-  * Windows  
-  * Office  
-  * Azure  
-  * Office 365  
-  * Security solutions (center configuration manager)  
-* Microsoft 365  
-  * Azure  
-  * Office  
-  * EMS (Enterprise Mobility \+ Security)  
-* Office 365 demo  
-  * Surveys  
-  * Flow \- approval workflow, etc.  
-  * Stream \- enterprise video hosting tool  
-  * Admin center  
-    * Can give a new user specific license \- E3, E5, etc.  
-      * Access to a mailbox  
-* Windows 10 Enterprise  
-* Enterprise Mobility \+ Security (EMS)  
-  * Helps protect an organization  
-  * Identity & Access Management  
-    * Azure active directory  
-  * Device & App Management  
-    * Intune  
-    * System center config manager  
-  * Threat protection  
-  * Information Protection  
-    * Office 365 data loss prevention  
-    * Azure information protection  
-    * Microsoft cloud app security  
-  * Security management  
-    * Security and compliance center  
-* Azure  
-  * Ever-expanding set of cloud services  
-  * Ex. Azure Active Directory  
-  * Pay per usage \- most services are separate cost  
-  * Most popular services  
-    * IaaS (what Azure started with)  
-      * Demo creating a virtual machine  
-        * Permits blocking inbound ports  
-        * Can save up to 49% with license we already own using Azure Hybrid Benefit  
-        * VM can be shut down at a specific time daily  
-        * Can tag a machine with a certain project (for accounting purposes)  
-        * A new VM deployment progress is shown, usually takes “a few minutes” for a machine without large resources, up to 1 hour  
-        * Download RDP file to log on  
-    * PaaS  
-      * App Service  
-      * Web Apps  
-        * Demo  
-          * Dashboard \> App Services \> Add \> pick a selection \> WordPress on Linux  
-          * Mysql (demo)  
-          * Gives a default URL (long version)  
-          * Shows FTP information for the site  
-          * HTTP application settings  
-          * Can enable autoscale  
-            * i.e. run 10 instances instead of 1  
-            * Based on a metric  
-            * Scale to a specific instance  
-          * Can be enabled  
-            * Load balancing  
-            * Backups  
-      * Logic Apps  
-    * Azure stack  
-      * Run hybrid apps across cloud boundaries  
-      * Edge and disconnected solutions  
-      * Cloud apps to meet regulatory requirements  
-* Microsoft 365  
-  * E3  
-    * Azure AD premium plan 1  
-  * E5  
-    * More features than E3  
-    * Azures AD premium plan 2  
-  * F1 \- Field workers  
-  * Microsoft 365 Business \- up to 300 users, beyond must go E3  
-  * Cloud solutions  
-    * IaaS  
-    * PaaS  
-    * SaaS (Office 365\)  
-    * Public cloud \- Office 365, Azure  
-    * Private cloud \- Azure Stack  
-    * Hybrid cloud \- Azure Stack  
-    * Community Cloud  
-      * Government, Office 365 Government, Germany, China (Vianet)
+- Introduction to Microsoft 365  
+  - Windows  
+  - Office  
+  - Azure  
+  - Office 365  
+  - Security solutions (System Center Configuration Manager)  
+- Microsoft 365  
+  - Azure  
+  - Office  
+  - EMS (Enterprise Mobility + Security)  
+- Office 365 demo  
+  - Surveys  
+  - Flow - approval workflow, etc.  
+  - Stream - enterprise video hosting tool  
+  - Admin center  
+    - Can give a new user specific license - E3, E5, etc.  
+      - Access to a mailbox  
+- Windows 10 Enterprise  
+- Enterprise Mobility + Security (EMS)  
+  - Helps protect an organization  
+  - Identity & Access Management  
+    - Azure Active Directory  
+  - Device & App Management  
+    - Intune  
+    - System Center Configuration Manager  
+  - Threat protection  
+  - Information Protection  
+    - Office 365 Data Loss Prevention  
+    - Azure Information Protection  
+    - Microsoft Cloud App Security  
+  - Security management  
+    - Security and Compliance Center  
+- Azure  
+  - Ever-expanding set of cloud services  
+  - Ex. Azure Active Directory  
+  - Pay per usage - most services are separate cost  
+  - Most popular services  
+    - IaaS (what Azure started with)  
+      - Demo creating a virtual machine  
+        - Permits blocking inbound ports  
+        - Can save up to 49% with license we already own using Azure Hybrid Benefit  
+        - VM can be shut down at a specific time daily  
+        - Can tag a machine with a certain project (for accounting purposes)  
+        - A new VM deployment progress is shown, usually takes "a few minutes" for a machine without large resources, up to 1 hour  
+        - Download RDP file to log on  
+    - PaaS  
+      - App Service  
+      - Web Apps  
+        - Demo  
+          - Dashboard > App Services > Add > pick a selection > WordPress on Linux  
+          - MySQL (demo)  
+          - Gives a default URL (long version)  
+          - Shows FTP information for the site  
+          - HTTP application settings  
+          - Can enable autoscale  
+            - i.e. run 10 instances instead of 1  
+            - Based on a metric  
+            - Scale to a specific instance  
+          - Can be enabled  
+            - Load balancing  
+            - Backups  
+      - Logic Apps  
+    - Azure Stack  
+      - Run hybrid apps across cloud boundaries  
+      - Edge and disconnected solutions  
+      - Cloud apps to meet regulatory requirements  
+- Microsoft 365  
+  - E3  
+    - Azure AD Premium Plan 1  
+  - E5  
+    - More features than E3  
+    - Azure AD Premium Plan 2  
+  - F1 - Field workers  
+  - Microsoft 365 Business - up to 300 users, beyond must go E3  
+  - Cloud solutions  
+    - IaaS  
+    - PaaS  
+    - SaaS (Office 365)  
+    - Public cloud - Office 365, Azure  
+    - Private cloud - Azure Stack  
+    - Hybrid cloud - Azure Stack  
+    - Community Cloud  
+      - Government, Office 365 Government, Germany, China (21Vianet)
 
-4 \- Course Conclusion
+## 4 - Course Conclusion
 
-* Cloud computing basics  
-* Microsoft 365 \- complete productivity solution  
-  * Office 365, Windows 10, EMS under a single monthly subscription  
-  * Microsoft 365 cloud solutions  
-  * IaaS, PaaS (Azure Logic Apps, Web Apps \+ other), SaaS (Office 365 \- SharePoint, Exchange, Teams)  
-  * Cloud deployment models \- public (Office 365, Azure), private (hardware used by single company, Azure Stack), hybrid (public and private, Azure Stack), community (infrastructure shared with several orgs and for country-specific regulations)  
-* Master a specific platform, or part of it  
-  * Office 365 \- SharePoint, Teams, Stream, Planner  
-  * Messaging (Exchange Online)  
-  * Azure  
-  * EMS  
-* Certification exists in fundamentals \- Microsoft 365 Certified Fundamentals  
-  * Exam MS-900  
-  * Learning path on Pluralsight  
-* Azure certification  
-  * Azure Fundamentals  
-  * AZ-900
+- Cloud computing basics  
+- Microsoft 365 - complete productivity solution  
+  - Office 365, Windows 10, EMS under a single monthly subscription  
+  - Microsoft 365 cloud solutions  
+  - IaaS, PaaS (Azure Logic Apps, Web Apps + other), SaaS (Office 365 - SharePoint, Exchange, Teams)  
+  - Cloud deployment models - public (Office 365, Azure), private (hardware used by single company, Azure Stack), hybrid (public and private, Azure Stack), community (infrastructure shared with several orgs and for country-specific regulations)  
+- Master a specific platform, or part of it  
+  - Office 365 - SharePoint, Teams, Stream, Planner  
+  - Messaging (Exchange Online)  
+  - Azure  
+  - EMS  
+- Certification exists in fundamentals - Microsoft 365 Certified Fundamentals  
+  - Exam MS-900  
+  - Learning path on Pluralsight  
+- Azure certification  
+  - Azure Fundamentals  
+  - AZ-900
 
-# 2 \- Microsoft 365: What’s Included?
+# 2 - Microsoft 365: What's Included?
 
-* Office 365  
-* Windows as a Service  
-* Enterprise Mobility & Security  
-* The Microsoft 365 Admin Center
+- Office 365  
+- Windows as a Service  
+- Enterprise Mobility & Security  
+- The Microsoft 365 Admin Center
 
-* Microsoft 365 Vision  
-  * Office  
-  * Windows OS  
-  * Azure  
-  * Office 365  
-  * Security (and device) solutions  
-* 4 pillars  
-  * Unlocks creativity  
-  * Built for teamwork  
-  * Integrated for simplicity  
-  * Intelligent security  
-* Office 365 \- software as a service  
-  * SharePoint Online  
-    * Enterprise Content Management  
-    * Intranet platform  
-      * Personalize your content  
-      * Can include external users  
-      * Advanced search capabilities  
-  * Exchange Online  
-    * Hosted email for business  
-    * Email, calendar, tasks  
-  * Microsoft Teams  
-    * Successor of Skype for Business  
-    * Group chat  
-    * 1-1 chat  
-    * Meetings  
-    * SharePoint as back-end for file sharing  
-    * Integration with LOB apps, chat bots, Q& bots, etc  
-    * Every team has file storage in the backend  
-    * Can add another cloud storage for Teams  
-    * Can call directly from within Teams or chat  
-  * Microsoft Planner  
-    * Task management for teams (similar to Trello)  
-    * Built-in task reports  
-  * Microsoft To-Do  
-    * Personal lists, reminders, etc.  
-    * Integrated with Planner (shows assigned to me)  
-  * Microsoft Stream  
-    * Private video hosting service in your tenant  
-    * Create a channel, drag and drop videos  
-    * Options for videos \- caption title, subtitle files, etc.  
-  * Microsoft Flow  
-    * Process automation  
-    * For power users (no coding)  
-    * Integrates with over 200 services (Microsoft and external)  
-    * Demo  
-      * Create an item for approval of purchase  
-      * By adding an item to a list start the approval process  
-  * PowerApps  
-    * Rapid app development for custom apps  
-    * Integrates with over 200 services  
-    * Demo  
-      * Editor demo \- run through features, i.e. adding screens, taking pictures in apps, starting a flow workflow  
-      * Request a site process \- gathering information about the site  
-      * Click Create \> select template for precreated set of apps (i.e. meeting capture)  
-  * Yammer  
-    * Enterprise social network  
-    * Internal and external network  
-  * Skype for Business Server  
-  * PowerBI  
-    * Business analytics  
-    * Share insights  
-    * Hundreds of data sources  
-    * Embed them in apps or web sites  
-  * Office 365 ProPlus  
-    * Heavy client  
-    * Evergreen version of Office, locally installed  
-    * New features twice a year  
-    * Always more advanced than standalone  
-  * OneDrive for Business  
-    * Storage for personal work documents  
-    * For people not yet ready to go into a team site  
-    * Between 1TB and unlimited storage for all users  
-    * Sync files between desktop and OneDrive  
-      * Right click \> select Always keep on this device  
-* Windows as a service  
-  * Windows 10  
-  * No more new version of Windows every few years  
-    * Avoids big changes where training required  
-    * Avoids waiting long periods without new features  
-    * Avoids lots of non-updated devices  
-  * Updates around March and September
+- Microsoft 365 Vision  
+  - Office  
+  - Windows OS  
+  - Azure  
+  - Office 365  
+  - Security (and device) solutions  
+- 4 pillars  
+  - Unlocks creativity  
+  - Built for teamwork  
+  - Integrated for simplicity  
+  - Intelligent security  
+- Office 365 - software as a service  
+  - SharePoint Online  
+    - Enterprise Content Management  
+    - Intranet platform  
+      - Personalize your content  
+      - Can include external users  
+      - Advanced search capabilities  
+  - Exchange Online  
+    - Hosted email for business  
+    - Email, calendar, tasks  
+  - Microsoft Teams  
+    - Successor of Skype for Business  
+    - Group chat  
+    - 1-1 chat  
+    - Meetings  
+    - SharePoint as back-end for file sharing  
+    - Integration with LOB apps, chat bots, Q&A bots, etc  
+    - Every team has file storage in the backend  
+    - Can add another cloud storage for Teams  
+    - Can call directly from within Teams or chat  
+  - Microsoft Planner  
+    - Task management for teams (similar to Trello)  
+    - Built-in task reports  
+  - Microsoft To-Do  
+    - Personal lists, reminders, etc.  
+    - Integrated with Planner (shows assigned to me)  
+  - Microsoft Stream  
+    - Private video hosting service in your tenant  
+    - Create a channel, drag and drop videos  
+    - Options for videos - caption title, subtitle files, etc.  
+  - Microsoft Flow  
+    - Process automation  
+    - For power users (no coding)  
+    - Integrates with over 200 services (Microsoft and external)  
+    - Demo  
+      - Create an item for approval of purchase  
+      - By adding an item to a list start the approval process  
+  - PowerApps  
+    - Rapid app development for custom apps  
+    - Integrates with over 200 services  
+    - Demo  
+      - Editor demo - run through features, i.e. adding screens, taking pictures in apps, starting a flow workflow  
+      - Request a site process - gathering information about the site  
+      - Click Create > select template for precreated set of apps (i.e. meeting capture)  
+  - Yammer  
+    - Enterprise social network  
+    - Internal and external network  
+  - Skype for Business Server  
+  - PowerBI  
+    - Business analytics  
+    - Share insights  
+    - Hundreds of data sources  
+    - Embed them in apps or web sites  
+  - Office 365 ProPlus  
+    - Heavy client  
+    - Evergreen version of Office, locally installed  
+    - New features twice a year  
+    - Always more advanced than standalone  
+  - OneDrive for Business  
+    - Storage for personal work documents  
+    - For people not yet ready to go into a team site  
+    - Between 1TB and unlimited storage for all users  
+    - Sync files between desktop and OneDrive  
+      - Right click > select Always keep on this device  
+- Windows as a service  
+  - Windows 10  
+  - No more new version of Windows every few years  
+    - Avoids big changes where training required  
+    - Avoids waiting long periods without new features  
+    - Avoids lots of non-updated devices  
+  - Updates around March and September
 
-* Enterprise Mobility \+ Security  
-  * Main services  
-    * Azure Active Directory  
-    * Microsoft Intune  
-    * Azure Information Protection  
-    * Microsoft Cloud App Security  
-    * Microsoft Advanced Threat Analytics  
-    * Azure Advanced Threat Protection  
-  * What is EMS?    
-    * Intelligent mobility management and security platform  
-  * Allows to work in flexible ways  
-  * Main products  
-    * Azure Active Directory  
-      * Identity and access management  
-      * Manage both internal and external apps  
-    * Microsoft Intune  
-      * Cloud based service for enterprise mobile device management  
-      * Manage mobile apps  
-      * Ensure devices and apps are compliant  
-    * Azure Information Protection  
-      * Classify and protect documents and emails  
-      * Create rules such as if a document is labelled specifically it will not be shared  
-    * Microsoft Cloud Security  
-      * Data collected directly from the firewall  
-      * Discover different cloud applications used across organisations including unknown apps  
-      * Automatically ranks and scores over 16,000 cloud apps based on how secure they are  
-    * Microsoft Advanced Threat Analytics  
-      * On-premise platform that helps protected cyber attacks  
-      * Parses network traffic  
-      * ATA technology detects multiple activities  
-        * Reconnaissance  
-        * Lateral movement cycle  
-        * Domain dominance  
-    * Azure Advanced Threat Protection  
-      * Cloud based security solution  
-      * Identify and detect threats  
-  * Microsoft 365 Admin Center  
-    * Central location to manage users and services  
-      * SharePoint Admin Center  
-      * Exchange Admin Center  
-      * Flo Admin Center  
-      * Security & Compliance Admin Center  
-      * Azure Active Directory Admin Center  
-      * PowerBI Admin Center  
-      * Etc  
-      * Roles decided based on Role Based Access Control (RBAC) permission model  
-        * Global Admin  
-        * Specialized Admin  
-          * SharePoint Admin  
-          * Exchange Admin \+ Teams Admin, etc
+- Enterprise Mobility + Security  
+  - Main services  
+    - Azure Active Directory  
+    - Microsoft Intune  
+    - Azure Information Protection  
+    - Microsoft Cloud App Security  
+    - Microsoft Advanced Threat Analytics  
+    - Azure Advanced Threat Protection  
+  - What is EMS?    
+    - Intelligent mobility management and security platform  
+  - Allows to work in flexible ways  
+  - Main products  
+    - Azure Active Directory  
+      - Identity and access management  
+      - Manage both internal and external apps  
+    - Microsoft Intune  
+      - Cloud based service for enterprise mobile device management  
+      - Manage mobile apps  
+      - Ensure devices and apps are compliant  
+    - Azure Information Protection  
+      - Classify and protect documents and emails  
+      - Create rules such as if a document is labelled specifically it will not be shared  
+    - Microsoft Cloud Security  
+      - Data collected directly from the firewall  
+      - Discover different cloud applications used across organisations including unknown apps  
+      - Automatically ranks and scores over 16,000 cloud apps based on how secure they are  
+    - Microsoft Advanced Threat Analytics  
+      - On-premise platform that helps protected cyber attacks  
+      - Parses network traffic  
+      - ATA technology detects multiple activities  
+        - Reconnaissance  
+        - Lateral movement cycle  
+        - Domain dominance  
+    - Azure Advanced Threat Protection  
+      - Cloud based security solution  
+      - Identify and detect threats  
+  - Microsoft 365 Admin Center  
+    - Central location to manage users and services  
+      - SharePoint Admin Center  
+      - Exchange Admin Center  
+      - Flow Admin Center  
+      - Security & Compliance Admin Center  
+      - Azure Active Directory Admin Center  
+      - PowerBI Admin Center  
+      - Etc  
+      - Roles decided based on Role Based Access Control (RBAC) permission model  
+        - Global Admin  
+        - Specialized Admin  
+          - SharePoint Admin  
+          - Exchange Admin + Teams Admin, etc
 
-Microsoft 365 Subscription and Pricing Models
+## Microsoft 365 Subscription and Pricing Models
 
-* Business price \- $20 / user per month based on annual contract directly from Microsoft  
-  * Price can vary from resellers / partners  
-* Enterprise  
-  * E3 \- Office 365, Windows 10 Enterprise, EMS  
-  * E5 \- Advanced security, voice, data analysis tools  
-    * $42.60 per user per month  
-  * F1 \- Field workers \- only used when needed, cheaper than E3 or E5  
-    * Missing \- installation of Office Apps, Data Loss Prevention  
-* Microsoft 365 Business  
-  * Small to medium businesses \- max 300 users  
-  * Beyond that it’s Enterprise  
-  * SMB only apps \- Invoicing, Blookings, MileIQ  
-  * Limited feature set of EMS Suite, i.e. no Azure AD  
-    * Features can be added as add-ons  
-* Microsoft 365 Education  
-  * Subscription only for education clients (colleges, high schools)  
-  * Classroom management  
-  * Free for students when bought for educators and staff  
-* Microsoft 365 Government  
-  * Need to qualify as organization before purchasing  
-  * Different levels depending on type of content stored  
-  * GCC, GCC High, DoD  
-* Comparing Microsoft 365  
-  * Go to the Compare all microsoft 365 plans on the Microsoft web site to see the plans and features included in each
+- Business price - $20 / user per month based on annual contract directly from Microsoft  
+  - Price can vary from resellers / partners  
+- Enterprise  
+  - E3 - Office 365, Windows 10 Enterprise, EMS  
+  - E5 - Advanced security, voice, data analysis tools  
+    - $42.60 per user per month  
+  - F1 - Field workers - only used when needed, cheaper than E3 or E5  
+    - Missing - installation of Office Apps, Data Loss Prevention  
+- Microsoft 365 Business  
+  - Small to medium businesses - max 300 users  
+  - Beyond that it's Enterprise  
+  - SMB only apps - Invoicing, Bookings, MileIQ  
+  - Limited feature set of EMS Suite, i.e. no Azure AD Premium  
+    - Features can be added as add-ons  
+- Microsoft 365 Education  
+  - Subscription only for education clients (colleges, high schools)  
+  - Classroom management  
+  - Free for students when bought for educators and staff  
+- Microsoft 365 Government  
+  - Need to qualify as organization before purchasing  
+  - Different levels depending on type of content stored  
+  - GCC, GCC High, DoD  
+- Comparing Microsoft 365  
+  - Go to the Compare all microsoft 365 plans on the Microsoft web site to see the plans and features included in each
 
-Buying Microsoft 365 Plans
+## Buying Microsoft 365 Plans
 
-* [https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans)  
-* Microsoft 365 Business  
-  * $20 / user / month \- annual contract  
-  * Windows 10 Business (Windows 10 Pro \+ additional cloud enabled features)  
-  * Office 365 Business Premium  
-  * SBM only apps \- Invoicing, Bookings, MileIQ  
-  * Contains a very limited feature set of the EMS suite  
-* Microsoft 365 Business vs Microsoft 365 Premium  
-* Microsoft 365 Enterprise  
-  * E3  
-    * Office 365 E3  
-    * Windows 10 Enterprise  
-    * EMS  
-    * $32.60 user/month  
-  * E5  
-    * All E3 capabilities \+ advanced security, voice and data  
-    * $57 user/month  
-    * Advanced security, data, and analysis tools  
-  * F1  
-    * Office Online only (no local installation)  
-  * Microsoft 365 has an ever-evolving set of tools  
-  * Microsoft 365 Education  
-    * Subscription only available to schools  
-    * Specifically built for education clients, i.e. classroom management  
-    * Free for students, but licensing can change  
-    * 3 plans  
-      * Microsoft 365 A1  
-      * Microsoft 365 A3 (A1 \+ additional features)  
-      * Microsoft 365 A5 (A3 \+ additional features)  
-  * Microsoft 365 Government  
-    * Hosted in US government community cloud  
-    * Need to qualify as a government organization  
-    * Different levels for types of content stored (GCC, GCC High, DoD)  
-    * Plans  
-      * Microsoft 365 G3  
-      * Microsoft 365 G5 (more advanced features)  
-* There is a feature comparison of enterprise plans between E5, E3, and F1  
-* You can always buy a specific service as an add-on  
-* Buying Microsoft 365  
-  * Directly  
-    * Fixed fee per month/year  
-    * Some subs need annual commitment  
-    * Basic service and basic support  
-  * From Microsoft CSP  
-    * Flexible payment options \- monthly, quarterly, yearly  
-    * Flexible commitment options  
-    * Different premium support / training offerings per CSP  
-    * Some CSP offer discounts or other benefits as part of their add value  
-* Support  
-  * Open tickets through admin center  
-  * Phone contact
+- [https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans)  
+- Microsoft 365 Business  
+  - $20 / user / month - annual contract  
+  - Windows 10 Business (Windows 10 Pro + additional cloud enabled features)  
+  - Office 365 Business Premium  
+  - SMB only apps - Invoicing, Bookings, MileIQ  
+  - Contains a very limited feature set of the EMS suite  
+- Microsoft 365 Business vs Microsoft 365 Premium  
+- Microsoft 365 Enterprise  
+  - E3  
+    - Office 365 E3  
+    - Windows 10 Enterprise  
+    - EMS  
+    - $32.60 user/month  
+  - E5  
+    - All E3 capabilities + advanced security, voice and data  
+    - $57 user/month  
+    - Advanced security, data, and analysis tools  
+  - F1  
+    - Office Online only (no local installation)  
+  - Microsoft 365 has an ever-evolving set of tools  
+  - Microsoft 365 Education  
+    - Subscription only available to schools  
+    - Specifically built for education clients, i.e. classroom management  
+    - Free for students, but licensing can change  
+    - 3 plans  
+      - Microsoft 365 A1  
+      - Microsoft 365 A3 (A1 + additional features)  
+      - Microsoft 365 A5 (A3 + additional features)  
+  - Microsoft 365 Government  
+    - Hosted in US government community cloud  
+    - Need to qualify as a government organization  
+    - Different levels for types of content stored (GCC, GCC High, DoD)  
+    - Plans  
+      - Microsoft 365 G3  
+      - Microsoft 365 G5 (more advanced features)  
+- There is a feature comparison of enterprise plans between E5, E3, and F1  
+- You can always buy a specific service as an add-on  
+- Buying Microsoft 365  
+  - Directly  
+    - Fixed fee per month/year  
+    - Some subs need annual commitment  
+    - Basic service and basic support  
+  - From Microsoft CSP  
+    - Flexible payment options - monthly, quarterly, yearly  
+    - Flexible commitment options  
+    - Different premium support / training offerings per CSP  
+    - Some CSP offer discounts or other benefits as part of their add value  
+- Support  
+  - Open tickets through admin center  
+  - Phone contact
 
 ![][image1]
 
-* Service Lifecycle  
-  * Always up to date  
-  * Features go through stages before publicly available  
-    * Private preview  
-    * Public preview  
-    * General availability (GA)  
-    * Support varies until GA  
-    * Features require different subscription in GA
+- Service Lifecycle  
+  - Always up to date  
+  - Features go through stages before publicly available  
+    - Private preview  
+    - Public preview  
+    - General availability (GA)  
+    - Support varies until GA  
+    - Features require different subscription in GA
 
-Course conclusion
+## Course conclusion
 
-* Single solution with tools for productivity  
-* Enterprise \- E3, E5 (most features), F1 (field workers)  
-* Business  
-* Education  
-* Government  
-* All offer Office 365 subscription at different levels  
-* 2 main ways to buy \- from Microsoft or CSP (cloud solution provider \- may offer more flexible payment options)  
-* Next?  
-  * Master a specific platform  
-    * Office 365 \- team administrator \- Teamwork (SharePoint, Teams, etc)  
-    * Messaging \- Exchange  
-    * Azure  
-    * EMS  
-  * Certification \- Microsoft 365 Fundamentals  
-    * MS-900
+- Single solution with tools for productivity  
+- Enterprise - E3, E5 (most features), F1 (field workers)  
+- Business  
+- Education  
+- Government  
+- All offer Office 365 subscription at different levels  
+- 2 main ways to buy - from Microsoft or CSP (cloud solution provider - may offer more flexible payment options)  
+- Next?  
+  - Master a specific platform  
+    - Office 365 - team administrator - Teamwork (SharePoint, Teams, etc)  
+    - Messaging - Exchange  
+    - Azure  
+    - EMS  
+  - Certification - Microsoft 365 Fundamentals  
+    - MS-900
 
-# 3 \- Microsoft 365 Security Concepts
+# 3 - Microsoft 365 Security Concepts
 
-* Cloud Computing: Who Secures What?  
-  * Cloud provider operates and secures   
-    * The base infrastructure  
-    * Host operating system  
-  * You  
-    * Identities  
-    * Additional application settings (i.e. MFA)  
-* Security responsibilities per deployment model  
-  * On-premise \- you are responsible for everything  
-  * IaaS  
-    * Cloud provider is responsible only for physical data center, network and hosts  
-    * You’re responsible for everything from OS through data governance  
-  * PaaS  
-    * Cloud provider is responsible for physical data center through OS, and partially for network controls, app controls and identity infrastructure  
-    * You’re responsible partially for network controls, apps, and access rights (identity), plus wholly responsible for account access, client endpoints and data governance  
-  * SaaS  
-    * Cloud provider is responsible for everything between physical data center through the application code, including some identity infrastructure  
-    * You’re only responsible for your account access and data (and API access if any)  
-* Microsoft EMS  
-  * Azure AD, Intune, Azure Information Protection, Cloud App Security, Advanced Threat Analytics, Azure Advanced Threat Protection
+- Cloud Computing: Who Secures What?  
+  - Cloud provider operates and secures  
+    - The base infrastructure  
+    - Host operating system  
+  - You  
+    - Identities  
+    - Additional application settings (i.e. MFA)  
+- Security responsibilities per deployment model  
+  - On-premise - you are responsible for everything  
+  - IaaS  
+    - Cloud provider is responsible only for physical data center, network and hosts  
+    - You're responsible for everything from OS through data governance  
+  - PaaS  
+    - Cloud provider is responsible for physical data center through OS, and partially for network controls, app controls and identity infrastructure  
+    - You're responsible partially for network controls, apps, and access rights (identity), plus wholly responsible for account access, client endpoints and data governance  
+  - SaaS  
+    - Cloud provider is responsible for everything between physical data center through the application code, including some identity infrastructure  
+    - You're only responsible for your account access and data (and API access if any)  
+- Microsoft EMS  
+  - Azure AD, Intune, Azure Information Protection, Cloud App Security, Advanced Threat Analytics, Azure Advanced Threat Protection
 
-2 \- Securing User Accounts with Azure Active Directory
+## 2 - Securing User Accounts with Azure Active Directory
 
-* Azure Active Directory  
-  * Backbone identity provider for all of Microsoft 365  
-  * Cloud based identity and access management service  
-  * Stores objects  
-  * Objects are users or groups  
-  * Objects have attributes  
-    * First name, last name, manager, etc  
-  * Shipped with Windows Server 2000  
-  * Most enterprises have on-premises AD provider  
-  * 4 editions of AAD  
-    * Free, Basic, P1, P2 (Premium)  
-    * Microsoft 365 version \- free
+- Azure Active Directory  
+  - Backbone identity provider for all of Microsoft 365  
+  - Cloud based identity and access management service  
+  - Stores objects  
+  - Objects are users or groups  
+  - Objects have attributes  
+    - First name, last name, manager, etc  
+  - Shipped with Windows Server 2000  
+  - Most enterprises have on-premises AD provider  
+  - 4 editions of AAD  
+    - Free, Basic, P1, P2 (Premium)  
+    - Microsoft 365 version - free
 
 ![][image2]
 
-* [https://azure.microsoft.com/en-us/pricing/details/active-directory/](https://azure.microsoft.com/en-us/pricing/details/active-directory/)  
-* Plans and features from Microsoft  
-  * Azure Active Directory pricing
+- [https://azure.microsoft.com/en-us/pricing/details/active-directory/](https://azure.microsoft.com/en-us/pricing/details/active-directory/)  
+- Plans and features from Microsoft  
+  - Azure Active Directory pricing
 
-Securing Mobile Devices with Microsoft Intune
+## Securing Mobile Devices with Microsoft Intune
 
-* MDM (Mobile Device Management)  
-  * Admin of mobile devices  
-  * Device-level policies  
-  * Password enforcement  
-  * Data encryption enforcement  
-  * Data inventory and tracking  
-  * Remote wipe (when a device is lost)  
-* MAM (Mobile Application Management)  
-  * Admin of applications on mobile devices  
-  * App-level management  
-  * Apply corporate policies on mobile apps  
-  * Limit the sharing of data amongst apps  
-  * Separate enterprise apps from personal content  
-  * Apps delivery  
-    * Enterprise app store  
-    * Software licensing management  
-  * More granular controls than MDM (only enterprise apps and content)  
-* Comparing Microsoft MDM/MAM solutions (slide below)
+- MDM (Mobile Device Management)  
+  - Admin of mobile devices  
+  - Device-level policies  
+  - Password enforcement  
+  - Data encryption enforcement  
+  - Data inventory and tracking  
+  - Remote wipe (when a device is lost)  
+- MAM (Mobile Application Management)  
+  - Admin of applications on mobile devices  
+  - App-level management  
+  - Apply corporate policies on mobile apps  
+  - Limit the sharing of data amongst apps  
+  - Separate enterprise apps from personal content  
+  - Apps delivery  
+    - Enterprise app store  
+    - Software licensing management  
+  - More granular controls than MDM (only enterprise apps and content)  
+- Comparing Microsoft MDM/MAM solutions (slide below)
 
 ![][image3]
 
-* Microsoft Intune  
-  * Service managed from Azure portal  
-  * Device compliance policies (minimum health & security requirements)  
-  * Manage client apps (add or remove)  
-  * Manage app level policies  
-  * Allows for VPN profiles (connect to VPN)  
-  * Intune is a huge platform \- there are courses specialized on this  
-* Can work together (MDM and MAM) or separately
+- Microsoft Intune  
+  - Service managed from Azure portal  
+  - Device compliance policies (minimum health & security requirements)  
+  - Manage client apps (add or remove)  
+  - Manage app level policies  
+  - Allows for VPN profiles (connect to VPN)  
+  - Intune is a huge platform - there are courses specialized on this  
+- Can work together (MDM and MAM) or separately
 
-Staying Compliant with Microsoft 365
+## Staying Compliant with Microsoft 365
 
-* Compliance is Regulatory Compliance  
-  * HIPAA  
-  * FISMA  
-  * HACCP  
-  * GDPR  
-  * PCI DSS  
-* HIPAA \- keep info for 6 years minimum  
-* PCI DSS \- run internal and external vulnerability scans after any change in the network  
-* What if not compliant  
-  * Generally a substantial fine  
-* Microsoft Trust Portal  
-  * Provides required audit and security information for requirements  
-  * Microsoft manages the infrastructure  
-  * Compliance Manager  
-    * A task-based tool  
-    * Risk assessment tool in the trust portal (trust, assign, verify activities with Microsoft)  
-    * Security in the cloud is a partnership  
-    * Regulatory guidelines  
-      * FedRAMP  
-      * SOC  
-      * ISO  
-    * Compliance manager shows action items per a specific regulatory requirement and assign tasks to people in your tenant (AD user) with due dates  
-* Office 365 DLP \- Data Loss Prevention  
-  * Allows to identify sensitive information across Microsoft services  
-    * Exchange, SharePoint, OneDrive, Teams  
-  * A regulatory compliance may enforce DLP  
+- Compliance is Regulatory Compliance  
+  - HIPAA  
+  - FISMA  
+  - HACCP  
+  - GDPR  
+  - PCI DSS  
+- HIPAA - keep info for 6 years minimum  
+- PCI DSS - run internal and external vulnerability scans after any change in the network  
+- What if not compliant  
+  - Generally a substantial fine  
+- Microsoft Trust Portal  
+  - Provides required audit and security information for requirements  
+  - Microsoft manages the infrastructure  
+  - Compliance Manager  
+    - A task-based tool  
+    - Risk assessment tool in the trust portal (trust, assign, verify activities with Microsoft)  
+    - Security in the cloud is a partnership  
+    - Regulatory guidelines  
+      - FedRAMP  
+      - SOC  
+      - ISO  
+    - Compliance manager shows action items per a specific regulatory requirement and assign tasks to people in your tenant (AD user) with due dates  
+- Office 365 DLP - Data Loss Prevention  
+  - Allows to identify sensitive information across Microsoft services  
+    - Exchange, SharePoint, OneDrive, Teams  
+  - A regulatory compliance may enforce DLP  
   * Credit card info  
   * PII, SSN, passport, driver’s license  
   * Patient information  
