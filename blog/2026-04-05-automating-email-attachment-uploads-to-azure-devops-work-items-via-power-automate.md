@@ -1,5 +1,4 @@
 ---
-date: 2026-04-05
 tags:
   - devops
   - power-automate

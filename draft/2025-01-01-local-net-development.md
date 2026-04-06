@@ -4,6 +4,7 @@ Tags:
   - .net-dev
   - codespaces
   - github
+visibility: hidden
 ---
 
 # Local .NET Development

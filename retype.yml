@@ -61,10 +61,11 @@ blog:
   pageSize: 5
   maxResults: 100
   title: Blog
-  # 1. Keeps the left sidebar visible while reading a post
   sidebar: true      
-  # 2. Hides the individual posts from the sidebar menu tree
-  navigation: false  
   rss:
     title: Blog Posts
     description: Latest blog posts
+
+navigation:
+  exclude:
+    - drafts/*
