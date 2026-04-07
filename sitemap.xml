@@ -31,10 +31,6 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-entity-framework-in-net/</loc>
-    <lastmod>2026-04-05T21:49:10Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
@@ -43,12 +39,12 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-local-net-development/</loc>
-    <lastmod>2026-04-05T21:49:10Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-devops-beginner-course-linkedin/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-local-net-development/</loc>
+    <lastmod>2026-04-05T21:49:10Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-git-guide/</loc>
@@ -63,11 +59,11 @@
     <lastmod>2026-04-05T21:49:10Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/tags/</loc>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-wiki-sites/</loc>
@@ -104,9 +100,6 @@
     <loc>https://pgsitarz.github.io/tags/deployment/</loc>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/tags/entity-framework/</loc>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/tags/git/</loc>
   </url>
   <url>
@@ -132,5 +125,8 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/retype/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/entity-framework/</loc>
   </url>
 </urlset>

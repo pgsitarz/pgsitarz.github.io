@@ -38,12 +38,6 @@
       <pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate>
     </item>
     <item>
-      <title>.NET Entity Framework</title>
-      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-entity-framework-in-net/</guid>
-      <description>Here are some of introductory interactions with Entity Framework when working with code first approach.</description>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-    </item>
-    <item>
       <title>Configuring DocFX</title>
       <guid isPermaLink="true">https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</guid>
       <description>Install latest .NET if you haven't yet</description>
