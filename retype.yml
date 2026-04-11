@@ -36,7 +36,7 @@ brand:
   favicon: /static/favicon.ico
 
 footer:
-  copyright: "&copy; {{ year }} sitarz.net. All rights reserved."
+  copyright: "&copy; {{ year }} pg.sitarz.net."
 
 templating:
   enabled: true
