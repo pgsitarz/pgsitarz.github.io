@@ -39,12 +39,12 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-devops-beginner-course-linkedin/</loc>
-    <lastmod>2026-04-05T03:08:34Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-local-net-development/</loc>
     <lastmod>2026-04-05T21:49:10Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-devops-beginner-course-linkedin/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-git-guide/</loc>
@@ -73,25 +73,10 @@
     <loc>https://pgsitarz.github.io/tags/devops/</loc>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/tags/local-dev/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/.net-dev/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/codespaces/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/github/</loc>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/tags/power-automate/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/sharepoint-online/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/entity-framework/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/docfx/</loc>
@@ -107,6 +92,18 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/git-tips/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/local-dev/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/.net-dev/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/codespaces/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/github/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/powerapps/</loc>
