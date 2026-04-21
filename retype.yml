@@ -8,11 +8,11 @@ start:
   pro: true
 
 meta:
-  title: " • pgsitarz.github.io"
+  title: " • pgsitarz"
 
 head:
   meta:
-    - name: pgsitarz.github.io
+    - name: pgsitarz
       content: ""
     - name: keywords
       content: ""  
