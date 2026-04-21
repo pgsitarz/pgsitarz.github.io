@@ -1,4 +1,4 @@
-﻿#  • pgsitarz.github.io
+﻿#  • pgsitarz
 
 - [Home](https://pgsitarz.github.io/readme.md): Home
 
