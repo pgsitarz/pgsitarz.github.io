@@ -19,9 +19,6 @@ head:
 
 branding:
   title: "pgsitarz.github.io"
-  #logo: imgs/logo.png
-  #logoDark: imgs/logo.png
-  #logoHeight: 40
 
 links:
 - text: Home
