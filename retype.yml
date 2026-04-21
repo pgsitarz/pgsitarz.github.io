@@ -18,7 +18,7 @@ head:
       content: ""  
 
 branding:
-  title: "pgsitarz.github.io"
+  title: "pgsitarz"
 
 links:
 - text: Home
@@ -34,7 +34,7 @@ brand:
   favicon: /static/favicon.ico
 
 footer:
-  copyright: "&copy; {{ year }} pgsitarz.github.io."
+  copyright: "&copy; {{ year }} pgsitarz"
 
 templating:
   enabled: true
