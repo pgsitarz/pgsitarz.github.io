@@ -8,7 +8,7 @@ start:
   pro: true
 
 meta:
-  title: " • pg.sitarz.net"
+  title: " • pgsitarz.github.io"
 
 head:
   meta:
@@ -18,9 +18,10 @@ head:
       content: ""  
 
 branding:
-  logo: imgs/logo.png
-  logoDark: imgs/logo.png
-  logoHeight: 40
+  title: "pgsitarz.github.io"
+  #logo: imgs/logo.png
+  #logoDark: imgs/logo.png
+  #logoHeight: 40
 
 links:
 - text: Home
@@ -36,7 +37,7 @@ brand:
   favicon: /static/favicon.ico
 
 footer:
-  copyright: "&copy; {{ year }} pg.sitarz.net."
+  copyright: "&copy; {{ year }} pgsitarz.github.io."
 
 templating:
   enabled: true
