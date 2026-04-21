@@ -34,7 +34,7 @@ brand:
   favicon: /static/favicon.ico
 
 footer:
-  copyright: "&copy; {{ year }} pgsitarz"
+  copyright: "&copy; {{ year }} pgsitarz.github.io"
 
 templating:
   enabled: true
