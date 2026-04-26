@@ -15,6 +15,10 @@
     <loc>https://pgsitarz.github.io/blog/3/</loc>
   </url>
   <url>
+    <loc>https://pgsitarz.github.io/blog/2026-04-26-dev-monitor-resolution/</loc>
+    <lastmod>2026-04-26T13:56:49Z</lastmod>
+  </url>
+  <url>
     <loc>https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate/</loc>
     <lastmod>2026-04-05T21:49:10Z</lastmod>
   </url>
@@ -27,11 +31,11 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache/</loc>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</loc>
+    <loc>https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
@@ -59,11 +63,11 @@
     <lastmod>2026-04-05T21:49:10Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/</loc>
-    <lastmod>2026-04-05T03:08:34Z</lastmod>
+    <loc>https://pgsitarz.github.io/tags/</loc>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/tags/</loc>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-wiki-sites/</loc>
@@ -125,5 +129,11 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/retype/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/dev-workstation/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/monitor-resolution/</loc>
   </url>
 </urlset>
