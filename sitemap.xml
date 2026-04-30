@@ -19,12 +19,12 @@
     <lastmod>2026-04-26T13:56:49Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate/</loc>
-    <lastmod>2026-04-05T21:49:10Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2026-04-05-ai-terms-you-need-to-know/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate/</loc>
+    <lastmod>2026-04-05T21:49:10Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2026-04-05-updating-retype-app/</loc>
@@ -43,11 +43,11 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-local-net-development/</loc>
-    <lastmod>2026-04-05T21:49:10Z</lastmod>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-devops-beginner-course-linkedin/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-devops-beginner-course-linkedin/</loc>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-power-apps-tips-and-notes/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
@@ -55,19 +55,15 @@
     <lastmod>2026-04-05T21:49:10Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-power-apps-tips-and-notes/</loc>
-    <lastmod>2026-04-05T03:08:34Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-getting-started-with-azure-data-workloads/</loc>
     <lastmod>2026-04-05T21:49:10Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/tags/</loc>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-wiki-sites/</loc>
@@ -96,18 +92,6 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/git-tips/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/local-dev/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/.net-dev/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/codespaces/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/github/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/powerapps/</loc>
