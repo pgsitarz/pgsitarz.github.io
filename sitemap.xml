@@ -15,20 +15,16 @@
     <loc>https://pgsitarz.github.io/blog/3/</loc>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2026-05-08-claude-code-setup-notes/</loc>
-    <lastmod>2026-05-09T19:50:04Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2026-04-26-dev-monitor-resolution/</loc>
     <lastmod>2026-04-26T13:56:49Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate/</loc>
-    <lastmod>2026-04-05T21:49:10Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2026-04-05-ai-terms-you-need-to-know/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate/</loc>
+    <lastmod>2026-04-05T21:49:10Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2026-04-05-updating-retype-app/</loc>
@@ -123,8 +119,5 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/monitor-resolution/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/claude-code/</loc>
   </url>
 </urlset>
