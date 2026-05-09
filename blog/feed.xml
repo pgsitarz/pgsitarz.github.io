@@ -5,7 +5,7 @@
     <link>https://pgsitarz.github.io/blog/</link>
     <description>Latest blog posts</description>
     <copyright>© 2026 pgsitarz.github.io</copyright>
-    <lastBuildDate>Sun, 26 Apr 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 00:00:00 GMT</lastBuildDate>
     <generator>Retype 4.5.0-preview6</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://pgsitarz.github.io/blog/feed.xml" />
     <image>
@@ -13,6 +13,12 @@
       <link>https://pgsitarz.github.io/blog/</link>
       <url>https://pgsitarz.github.io/favicon.ico</url>
     </image>
+    <item>
+      <title>Claude Code Setup</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-05-08-claude-code-setup-notes/</guid>
+      <description>Run this in the command prompt (not PowerShell):</description>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Developer Monitor Resolution and Scaling</title>
       <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-04-26-dev-monitor-resolution/</guid>
