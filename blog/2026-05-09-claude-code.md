@@ -40,6 +40,8 @@ Check out [Claude Code Docs for Google Vertex AI](https://code.claude.com/docs/e
 
 Here we can probably hook up our Firestore database with Claude models.
 
+Where to start to set it up - [Claude Code Docs](https://code.claude.com/docs/en/admin-setup)
+
 
 
 
