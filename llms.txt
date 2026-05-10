@@ -1,6 +1,6 @@
 ﻿#  • pgsitarz
 
-- [Home](https://pgsitarz.github.io/readme.md): Home
+- [Introducing Azure AI Foundry - Everything you need for AI development](https://pgsitarz.github.io/readme.md): Introducing Azure AI Foundry - Everything you need for AI development
 
 ## Blog
 
