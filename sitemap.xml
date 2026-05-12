@@ -19,6 +19,10 @@
     <lastmod>2026-04-26T13:56:49Z</lastmod>
   </url>
   <url>
+    <loc>https://pgsitarz.github.io/blog/2026-05-11-disable-tier-upgrade/</loc>
+    <lastmod>2026-05-11T22:18:16Z</lastmod>
+  </url>
+  <url>
     <loc>https://pgsitarz.github.io/blog/2026-04-05-ai-terms-you-need-to-know/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
@@ -31,11 +35,11 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</loc>
+    <loc>https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache/</loc>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
@@ -47,12 +51,12 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-power-apps-tips-and-notes/</loc>
-    <lastmod>2026-04-05T03:08:34Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-git-guide/</loc>
     <lastmod>2026-04-05T21:49:10Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-power-apps-tips-and-notes/</loc>
+    <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-getting-started-with-azure-data-workloads/</loc>
@@ -119,5 +123,11 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/monitor-resolution/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/azure/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/tier-upgrade/</loc>
   </url>
 </urlset>
