@@ -6,6 +6,7 @@
 
 - [Blog](https://pgsitarz.github.io/blog/index.md)
 - [Disable Tier Upgrade for Azure Cognitive Services](https://pgsitarz.github.io/blog/2026-05-11-disable-tier-upgrade.md): A step-by-step guide to disable automatic tier upgrades for Azure Cognitive Services using a batch script.
+- [Claude Code Setup](https://pgsitarz.github.io/blog/2026-05-09-claude-code.md): Run this in the command prompt (not PowerShell):
 - [Developer Monitor Resolution and Scaling](https://pgsitarz.github.io/blog/2026-04-26-dev-monitor-resolution.md): To maintain a productive and comfortable development workstation environment, here are some key settings that work well:
 - [AI Terms You Need to Know: Agents, RAG, ASI & More](https://pgsitarz.github.io/blog/2026-04-05-ai-terms-you-need-to-know.md): Here are a few AI terms that everyone that designs solutions using AI should know.
 - [Automating Email Attachment Uploads to Azure DevOps Work Items via Power Automate](https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate.md): This article assumes you know how to implement the following steps first:
