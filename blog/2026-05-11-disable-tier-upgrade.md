@@ -4,7 +4,7 @@ description: A step-by-step guide to disable automatic tier upgrades for Azure C
 tags: [azure, tier upgrade]
 ---
 
-To disable automatic tier upgrades for Azure Cognitive Services, follow the steps below:
+To disable automatic tier upgrades for Azure, follow the steps below:
 
 1. Open browser DevTools
 2. Go to portal.azure.com
