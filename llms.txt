@@ -5,11 +5,12 @@
 ## Blog
 
 - [Blog](https://pgsitarz.github.io/blog/index.md)
-- [Data API Builder](https://pgsitarz.github.io/blog/dab.md): Microsoft Ships Data API Builder for Azure SQL Databases
 - [Disable Tier Upgrade for Azure Cognitive Services](https://pgsitarz.github.io/blog/2026-05-11-disable-tier-upgrade.md): A step-by-step guide to disable automatic tier upgrades for Azure Cognitive Services using a batch script.
+- [Claude Code Setup](https://pgsitarz.github.io/blog/2026-05-09-claude-code.md): Run this in the command prompt (not PowerShell):
 - [Developer Monitor Resolution and Scaling](https://pgsitarz.github.io/blog/2026-04-26-dev-monitor-resolution.md): To maintain a productive and comfortable development workstation environment, here are some key settings that work well:
 - [AI Terms You Need to Know: Agents, RAG, ASI & More](https://pgsitarz.github.io/blog/2026-04-05-ai-terms-you-need-to-know.md): Here are a few AI terms that everyone that designs solutions using AI should know.
 - [Automating Email Attachment Uploads to Azure DevOps Work Items via Power Automate](https://pgsitarz.github.io/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate.md): This article assumes you know how to implement the following steps first:
+- [Data API Builder](https://pgsitarz.github.io/blog/dab.md): Microsoft Ships Data API Builder for Azure SQL Databases
 - [Updating the Retype app](https://pgsitarz.github.io/blog/2026-04-05-updating-retype-app.md): Here are a few notes on updating the retype app. I originally installed it with the dotnet command, so I have to continue using dotnet to update the retypeapp.
 - [Clear Browser Network Cache](https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache.md): Copy and paste the URL below in your browser and then click Clear host cache.
 - [Configuring DocFX](https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx.md): Install latest .NET if you haven't yet
