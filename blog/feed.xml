@@ -20,12 +20,6 @@
       <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
-      <title>Claude Code Setup</title>
-      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-05-09-claude-code/</guid>
-      <description>Run this in the command prompt (not PowerShell):</description>
-      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
       <title>Developer Monitor Resolution and Scaling</title>
       <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-04-26-dev-monitor-resolution/</guid>
       <description>To maintain a productive and comfortable development workstation environment, here are some key settings that work well:</description>
