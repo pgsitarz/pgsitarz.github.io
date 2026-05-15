@@ -90,7 +90,7 @@ Store your API Key: Add your ANTHROPIC_API_KEY to Settings > Secrets and variabl
 
 Create a Workflow: Use a simple shell script or Python action to send code snippets to Claude.
 
-# Example snippet for a custom Claude Action
+## Example snippet for a custom Claude Action
 ```
 jobs:
   claude_review:
