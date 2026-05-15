@@ -1,7 +1,6 @@
 ---
 title: Claude Code Setup
 tags: [ai, claude-code]
-visibility: hidden
 ---
 
 # Claude Code Setup Notes
@@ -109,6 +108,19 @@ jobs:
               "messages": [{"role": "user", "content": "Review this code for security vulnerabilities."}]
             }'
 ```
+
+Claude Code has:
+
+- Planning mode 
+- Thinking modes
+  - Think
+  - Think more
+  - Think a lot
+  - Think longer
+  - Ultrathink
+
+Location of the Github Claude app:
+- [https://github.com/apps/claude](https://github.com/apps/claude)
 
 
 
