@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.0-preview6.832201847612">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832569307034">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.0-preview6">
+    <meta name="generator" content="Retype 4.6.0-preview">
 
     <!-- Primary Meta Tags -->
     <title>Claude Code Setup • pgsitarz</title>
@@ -41,11 +41,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.5.0-preview6.832201847612" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0-preview.832569307034" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.0-preview6.832201847612" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.0-preview6" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.0-preview6.832201847612" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0-preview.832569307034" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0-preview.832569307034" data-turbo-eval="false" defer></script>
 
     <style>
     a.flex.items-center.justify-center.flex-nowrap.h-16
@@ -284,6 +284,8 @@ Select login method:
 <li>Creates a summary</li>
 <li>Writes the summary to the CLAUDE.md file</li>
 <li>This file is included in every request</li>
+<li>Helps find code faster</li>
+<li>Location where you can give Claude guidance</li>
 </ul>
 <p>It wants to go through all subfolder <code translate="no" v-pre>(max depth 3?)</code> to explore the codebase to understand its structure before creating CLAUDE.md file.</p>
 <p>Well, this takes a while.</p>
@@ -343,6 +345,57 @@ Store your API Key: Add your ANTHROPIC_API_KEY to Settings &gt; Secrets and vari
 <ul>
 <li><a href="https://github.com/apps/claude" class="outbound" target="_blank"><span>https://github.com/apps/claude</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
 </ul>
+<h2 id="controlling-contenxt">Controlling contenxt</h2>
+<ul>
+<li>Escape
+<ul>
+<li>Interrupt Claude, allowing you to redirect or correct it</li>
+<li>Fix issues with #memories</li>
+</ul>
+</li>
+<li>Doube-tap Escape
+<ul>
+<li>Rewind the conversation to an earlier point in time</li>
+<li>Allows you to maintain valuable context</li>
+</ul>
+</li>
+<li><code translate="no" v-pre>/compact</code>
+<ul>
+<li>Summarize the conversation and continue</li>
+<li>Helps Claude stay focused but remember what it has learned in the current session</li>
+</ul>
+</li>
+<li><code translate="no" v-pre>/clear</code>
+<ul>
+<li>Dumps current conversation history</li>
+<li>Useful when switching between different tasks</li>
+</ul>
+</li>
+</ul>
+<h2 id="custom-commands">Custom commands</h2>
+<p>Forward slash brings up the custom commands menu, i.e. <code translate="no" v-pre>/add-dir</code>, etc.</p>
+<p>Also, create a folder called <code translate="no" v-pre>commands</code> and drop <code translate="no" v-pre>.md</code> files into it, for example:</p>
+<p>Create a file called <code translate="no" v-pre>audit.md</code> and add this text (skip the hyphens):</p>
+<hr>
+<p>Your goal is to update any vulnerable dependencies.</p>
+<p>Do the following:</p>
+<ol>
+<li>Run &#x60;npm audit&#x27; to fin dvulnerable installed packages in this project</li>
+<li>Run <code translate="no" v-pre>npm audit fix</code> to apply updates</li>
+<li>Run test and verify the updates didn&#x27;t break anything</li>
+</ol>
+<hr>
+<p>Then restart claude code (<code translate="no" v-pre>claude</code> command), then go to command and type in <code translate="no" v-pre>audit</code> command.  This will run your audit.md commands.</p>
+<p>You can also pass arguments by having <code translate="no" v-pre>$ARGUMENTS</code> in the first line of the markup file.  The value is inserted at <code translate="no" v-pre>$arguments</code> use.</p>
+<h2 id="mcp-servers">MCP servers</h2>
+<p>These are use for <strong>new tools and capabilities</strong>; these aren&#x27;t used as APIs (which are data).</p>
+<p>![Claude Code and MCP Servers](assets\Screenshot 2026-05-20 002512.png)</p>
+<p>To add the MCP servers, use the command <code translate="no" v-pre>claude mcp add playwright npx @playwrithe/mcp@latest</code>.</p>
+<p>If you get any allow requests, add <code translate="no" v-pre>mcp__servername</code>, i.e. <code translate="no" v-pre>mcp__playwright</code> to the allow list in the <code translate="no" v-pre>.claude/settings.local.json</code>.</p>
+<p>Depending on the type of a project you&#x27;re working on, there is probably an MCP server for it.</p>
+<h2 id="github-integration">Github integration</h2>
+<p>Run <code translate="no" v-pre>/install-github-app</code> and install the app.</p>
+<p>[Default Github actions](assets\Screenshot 2026-05-20 011343.png)</p>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
@@ -372,9 +425,6 @@ Store your API Key: Add your ANTHROPIC_API_KEY to Settings &gt; Secrets and vari
                 </a></span>
                     </span>
                 
-                    <time id="retype-last-updated" class="text-sm whitespace-nowrap text-base-text-muted ml-auto" datetime="2026-05-15T19:10:31" title="2026-05-15" data-absolute-label="Last updated on 2026-05-15" data-absolute-label-html="Last updated on 2026-05-15" data-relative-template="Last updated {0}" data-relative-template-html="Last updated RETYPETEMPLATELASTUPDATEDVALUETOKEN">
-                        Last updated on 2026-05-15
-                    </time>
                 </div>
 
                 <!-- Required only on API pages -->
