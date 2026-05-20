@@ -59,6 +59,8 @@ The ``/init`` command
 - Creates a summary
 - Writes the summary to the CLAUDE.md file
 - This file is included in every request
+- Helps find code faster
+- Location where you can give Claude guidance
 
 It wants to go through all subfolder ``(max depth 3?)`` to explore the codebase to understand its structure before creating CLAUDE.md file.
 
@@ -123,6 +125,59 @@ Location of the Github Claude app:
 - [https://github.com/apps/claude](https://github.com/apps/claude)
 
 
+## Controlling contenxt
+
+- Escape
+  - Interrupt Claude, allowing you to redirect or correct it
+  - Fix issues with #memories
+- Doube-tap Escape
+  - Rewind the conversation to an earlier point in time
+  - Allows you to maintain valuable context
+- ``/compact`` 
+  - Summarize the conversation and continue
+  - Helps Claude stay focused but remember what it has learned in the current session
+- ``/clear`` 
+  - Dumps current conversation history
+  - Useful when switching between different tasks
+
+## Custom commands
+
+Forward slash brings up the custom commands menu, i.e. ``/add-dir``, etc.
+
+Also, create a folder called ``commands`` and drop ``.md`` files into it, for example:
+
+Create a file called ``audit.md`` and add this text (skip the hyphens):
+
+---
+Your goal is to update any vulnerable dependencies.
+
+Do the following:
+1. Run `npm audit' to fin dvulnerable installed packages in this project
+2. Run `npm audit fix` to apply updates
+3. Run test and verify the updates didn't break anything
+---
+
+Then restart claude code (``claude`` command), then go to command and type in ``audit`` command.  This will run your audit.md commands.
+
+You can also pass arguments by having ``$ARGUMENTS`` in the first line of the markup file.  The value is inserted at ``$arguments`` use.
+
+## MCP servers
+
+These are use for **new tools and capabilities**; these aren't used as APIs (which are data).
+
+![Claude Code and MCP Servers](assets\Screenshot 2026-05-20 002512.png)
+
+To add the MCP servers, use the command ``claude mcp add playwright npx @playwrithe/mcp@latest``.
+
+If you get any allow requests, add ``mcp__servername``, i.e. ``mcp__playwright`` to the allow list in the ``.claude/settings.local.json``.
+
+Depending on the type of a project you're working on, there is probably an MCP server for it.
+
+## Github integration
+
+Run ``/install-github-app`` and install the app.
+
+[Default Github actions](assets\Screenshot 2026-05-20 011343.png)
 
 
 
