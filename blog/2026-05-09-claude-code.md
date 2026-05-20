@@ -181,3 +181,4 @@ When running actions and calling Claude (using the ``yml`` file), you have to li
 ## Hooks
 
 - Automatic actions that run right prior to running Claude commands, or actions that run right after.
+E
