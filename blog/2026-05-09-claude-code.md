@@ -156,7 +156,7 @@ You can also pass arguments by having ``$ARGUMENTS`` in the first line of the ma
 
 These are use for **new tools and capabilities**; these aren't used as APIs (which are data).
 
-![Claude Code and MCP Servers](assets\Screenshot 2026-05-20 002512.png)
+![Claude Code and MCP Servers](/assets/Screenshot 2026-05-20 002512.png)
 
 To add the MCP servers, use the command ``claude mcp add playwright npx @playwrithe/mcp@latest``.
 
@@ -168,4 +168,4 @@ Depending on the type of a project you're working on, there is probably an MCP s
 
 Run ``/install-github-app`` and install the app.
 
-[Default Github actions](assets\Screenshot 2026-05-20 011343.png)
+[Default Github actions](/assets/Screenshot 2026-05-20 011343.png)
