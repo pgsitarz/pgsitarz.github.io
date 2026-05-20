@@ -174,7 +174,7 @@ A pull request is automatically created with two actions:
 1 - Adds @mention action support
 2 - Adds pull request action support ()
 
-![Default Github actions]("/assets/Screenshot 2026-05-20 011343.png")
+![Default Github actions](assets\Screenshot_2026-05-20_011343.png)
 
 When running actions and calling Claude (using the ``yml`` file), you have to list each MCP server individually that you want to allow.
 
