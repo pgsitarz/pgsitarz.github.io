@@ -116,6 +116,10 @@ Claude Code has:
 Location of the Github Claude app:
 - [https://github.com/apps/claude](https://github.com/apps/claude)
 
+## Tools with Claude Code
+
+[Tools with Claude Code](/assets/claude-features-1.png)
+
 ## Controlling contenxt
 
 - Escape
@@ -156,7 +160,7 @@ You can also pass arguments by having ``$ARGUMENTS`` in the first line of the ma
 
 These are use for **new tools and capabilities**; these aren't used as APIs (which are data).
 
-![Claude Code and MCP Servers]("/assets/Screenshot 2026-05-20 002512.png")
+![Claude Code and MCP Servers](/assets/claude-features-2.png)
 
 To add the MCP servers, use the command ``claude mcp add playwright npx @playwrithe/mcp@latest``.
 
@@ -178,6 +182,24 @@ A pull request is automatically created with two actions:
 
 When running actions and calling Claude (using the ``yml`` file), you have to list each MCP server individually that you want to allow.
 
+## Sample task - data anlysis
+
+![Data analysis task](/assets/claude-features-3.png)
+
 ## Hooks
 
-- Automatic actions that run right prior to running Claude commands, or actions that run right after.
+Automatic actions that run right prior to running Claude commands, or actions that run right after.
+
+![Hooks](/assets/Screenshot_2026-05-21_000005.png)
+
+### How hooks work
+
+![How hooks work](/assets/Screenshot_2026-05-21_000224.png)
+
+You can write hooks by going to ``/hooks``:
+
+![How hooks work](/assets/Screenshot_2026-05-21_000435.png)
+
+One more but last diagram on  hooks; let's see how useful they are.
+
+![How hooks work](/assets/Screenshot_2026-05-21_000842.png)

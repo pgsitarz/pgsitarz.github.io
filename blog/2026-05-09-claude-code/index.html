@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview.832572235373">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0-preview2.832651884634">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.6.0-preview">
+    <meta name="generator" content="Retype 4.6.0-preview2">
 
     <!-- Primary Meta Tags -->
     <title>Claude Code Setup • pgsitarz</title>
@@ -23,6 +23,10 @@
     <meta property="og:url" content="https://pgsitarz.github.io/blog/2026-05-09-claude-code/">
     <meta property="og:title" content="Claude Code Setup • pgsitarz">
     <meta property="og:description" content="Run this in the command prompt (not PowerShell):">
+    <meta property="og:image" content="https://pgsitarz.github.io/assets/claude-features-2.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Claude Code Setup • pgsitarz">
     <meta property="og:site_name" content="pgsitarz">
     <meta property="og:locale" content="en_US">
 
@@ -31,6 +35,8 @@
     <meta name="twitter:url" content="https://pgsitarz.github.io/blog/2026-05-09-claude-code/">
     <meta name="twitter:title" content="Claude Code Setup • pgsitarz">
     <meta name="twitter:description" content="Run this in the command prompt (not PowerShell):">
+    <meta name="twitter:image" content="https://pgsitarz.github.io/assets/claude-features-2.png">
+    <meta name="twitter:image:alt" content="Claude Code Setup • pgsitarz">
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Blog Posts" href="https://pgsitarz.github.io/blog/feed.xml">
@@ -41,11 +47,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0-preview.832572235373" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0-preview2.832651884634" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0-preview.832572235373" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0-preview.832572235373" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0-preview2.832651884634" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0-preview2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0-preview2.832651884634" data-turbo-eval="false" defer></script>
 
     <style>
     a.flex.items-center.justify-center.flex-nowrap.h-16
@@ -345,6 +351,8 @@ Store your API Key: Add your ANTHROPIC_API_KEY to Settings &gt; Secrets and vari
 <ul>
 <li><a href="https://github.com/apps/claude" class="outbound" target="_blank"><span>https://github.com/apps/claude</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
 </ul>
+<h2 id="tools-with-claude-code">Tools with Claude Code</h2>
+<p><a href="../../assets/claude-features-1.png">Tools with Claude Code</a></p>
 <h2 id="controlling-contenxt">Controlling contenxt</h2>
 <ul>
 <li>Escape
@@ -389,7 +397,10 @@ Store your API Key: Add your ANTHROPIC_API_KEY to Settings &gt; Secrets and vari
 <p>You can also pass arguments by having <code translate="no" v-pre>$ARGUMENTS</code> in the first line of the markup file.  The value is inserted at <code translate="no" v-pre>$arguments</code> use.</p>
 <h2 id="mcp-servers">MCP servers</h2>
 <p>These are use for <strong>new tools and capabilities</strong>; these aren&#x27;t used as APIs (which are data).</p>
-<p>![Claude Code and MCP Servers](&quot;/assets/Screenshot 2026-05-20 002512.png&quot;)</p>
+<figure class="content-center">
+    <img src="../../assets/claude-features-2.png" alt="Claude Code and MCP Servers" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1544" height="719" />
+    <figcaption class="caption">Claude Code and MCP Servers</figcaption>
+</figure>
 <p>To add the MCP servers, use the command <code translate="no" v-pre>claude mcp add playwright npx @playwrithe/mcp@latest</code>.</p>
 <p>If you get any allow requests, add <code translate="no" v-pre>mcp__servername</code>, i.e. <code translate="no" v-pre>mcp__playwright</code> to the allow list in the <code translate="no" v-pre>.claude/settings.local.json</code>.</p>
 <p>Depending on the type of a project you&#x27;re working on, there is probably an MCP server for it.</p>
@@ -404,10 +415,32 @@ Store your API Key: Add your ANTHROPIC_API_KEY to Settings &gt; Secrets and vari
     <figcaption class="caption">Default Github actions</figcaption>
 </figure>
 <p>When running actions and calling Claude (using the <code translate="no" v-pre>yml</code> file), you have to list each MCP server individually that you want to allow.</p>
+<h2 id="sample-task---data-anlysis">Sample task - data anlysis</h2>
+<figure class="content-center">
+    <img src="../../assets/claude-features-3.png" alt="Data analysis task" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1561" height="806" />
+    <figcaption class="caption">Data analysis task</figcaption>
+</figure>
 <h2 id="hooks">Hooks</h2>
-<ul>
-<li>Automatic actions that run right prior to running Claude commands, or actions that run right after.</li>
-</ul>
+<p>Automatic actions that run right prior to running Claude commands, or actions that run right after.</p>
+<figure class="content-center">
+    <img src="../../assets/screenshot_2026-05-21_000005.png" alt="Hooks" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1473" height="678" />
+    <figcaption class="caption">Hooks</figcaption>
+</figure>
+<h3 id="how-hooks-work">How hooks work</h3>
+<figure class="content-center">
+    <img src="../../assets/screenshot_2026-05-21_000224.png" alt="How hooks work" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1897" height="1069" />
+    <figcaption class="caption">How hooks work</figcaption>
+</figure>
+<p>You can write hooks by going to <code translate="no" v-pre>/hooks</code>:</p>
+<figure class="content-center">
+    <img src="../../assets/screenshot_2026-05-21_000435.png" alt="How hooks work" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="2087" height="1078" />
+    <figcaption class="caption">How hooks work</figcaption>
+</figure>
+<p>One more but last diagram on  hooks; let&#x27;s see how useful they are.</p>
+<figure class="content-center">
+    <img src="../../assets/screenshot_2026-05-21_000842.png" alt="How hooks work" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1928" height="984" />
+    <figcaption class="caption">How hooks work</figcaption>
+</figure>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">
