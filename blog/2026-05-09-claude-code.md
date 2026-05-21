@@ -158,7 +158,7 @@ You can also pass arguments by having ``$ARGUMENTS`` in the first line of the ma
 
 ## MCP servers
 
-These are use for **new tools and capabilities**; these aren't used as APIs (which are data).
+MCP (model context protocol) servers are used for **new tools and capabilities** and are not used as APIs (data).
 
 ![Claude Code and MCP Servers](/assets/claude-features-2.png)
 
