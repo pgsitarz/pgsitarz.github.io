@@ -1,7 +1,7 @@
 ---
 title: Claude Code Setup
 tags: [ai, claude-code]
-visibility: hidden
+visibility: visible
 ---
 
 # Claude Code Setup Notes
