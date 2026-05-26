@@ -2,7 +2,7 @@ $ErrorActionPreference = "Stop"
 
 Write-Host 'Pushing changes to Git for my app!';
 
-$dir = $env:USERPROFILE + "\source\repos\sitarz-pg\"
+$dir = $env:USERPROFILE + "\source\repos\pgsitarz\pgsitarz.github.io\"
 Set-Location $dir
 
 Write-Output '';
