@@ -1,3 +1,7 @@
+# Azure Cosmos DB Conf 2026
+
+https://www.youtube.com/playlist?list=PLlrxD0HtieHh0o6VplO6WczH89pVWJwP1
+
 # Introducing Azure AI Foundry - Everything you need for AI development
 
 https://www.youtube.com/watch?v=GD7MnIwAxYM
