@@ -5,7 +5,7 @@
 ## Blog
 
 - [Blog](https://pgsitarz.github.io/blog/index.md)
-- [Data API ZBuilder](https://pgsitarz.github.io/blog/2026-06-24-microsoft-data-api-builder.md): Microsoft Ships Data API Builder for Azure SQL Databases
+- [Data API Builder](https://pgsitarz.github.io/blog/2026-06-24-microsoft-data-api-builder.md): Microsoft Ships Data API Builder for Azure SQL Databases
 - [Disable Tier Upgrade for Azure Cognitive Services](https://pgsitarz.github.io/blog/2026-05-11-disable-tier-upgrade.md): A step-by-step guide to disable automatic tier upgrades for Azure Cognitive Services using a batch script.
 - [Claude Code Setup](https://pgsitarz.github.io/blog/2026-05-09-claude-code.md): Run this in the command prompt (not PowerShell):
 - [Developer Monitor Resolution and Scaling](https://pgsitarz.github.io/blog/2026-04-26-dev-monitor-resolution.md): To maintain a productive and comfortable development workstation environment, here are some key settings that work well:
