@@ -1,5 +1,5 @@
 ---
-title: Data API ZBuilder
+title: Data API Builder
 tags: [api, dab]
 visibility: visible
 ---
