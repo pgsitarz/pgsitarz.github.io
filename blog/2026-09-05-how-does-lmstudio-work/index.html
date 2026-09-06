@@ -10,33 +10,33 @@
     <meta name="generator" content="Retype 4.7.0-preview">
 
     <!-- Primary Meta Tags -->
-    <title>SharePoint Online Governance Guidelines • pgsitarz</title>
-    <meta name="title" content="SharePoint Online Governance Guidelines • pgsitarz">
-    <meta name="description" content="What's a great sharepoint online governance tool?">
+    <title>How Running Local Models Works with LM Studio • pgsitarz</title>
+    <meta name="title" content="How Running Local Models Works with LM Studio • pgsitarz">
+    <meta name="description" content="Running local models through LM Studio bridges the gap between massive, cloud-hosted AI APIs (such as OpenAI or Anthropic) and your personal hardware.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/">
+    <link rel="canonical" href="https://pgsitarz.github.io/blog/2026-09-05-how-does-lmstudio-work/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://pgsitarz.github.io/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/">
-    <meta property="og:title" content="SharePoint Online Governance Guidelines • pgsitarz">
-    <meta property="og:description" content="What's a great sharepoint online governance tool?">
+    <meta property="og:url" content="https://pgsitarz.github.io/blog/2026-09-05-how-does-lmstudio-work/">
+    <meta property="og:title" content="How Running Local Models Works with LM Studio • pgsitarz">
+    <meta property="og:description" content="Running local models through LM Studio bridges the gap between massive, cloud-hosted AI APIs (such as OpenAI or Anthropic) and your personal hardware.">
     <meta property="og:site_name" content="pgsitarz">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance/">
-    <meta name="twitter:title" content="SharePoint Online Governance Guidelines • pgsitarz">
-    <meta name="twitter:description" content="What's a great sharepoint online governance tool?">
+    <meta name="twitter:url" content="https://pgsitarz.github.io/blog/2026-09-05-how-does-lmstudio-work/">
+    <meta name="twitter:title" content="How Running Local Models Works with LM Studio • pgsitarz">
+    <meta name="twitter:description" content="Running local models through LM Studio bridges the gap between massive, cloud-hosted AI APIs (such as OpenAI or Anthropic) and your personal hardware.">
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Blog Posts" href="https://pgsitarz.github.io/blog/feed.xml">
 
     <!-- Alternate Markdown -->
-    <link rel="alternate" type="text/markdown" href="https://pgsitarz.github.io/blog/2025-01-01-sharepoint-online-governance.md">
+    <link rel="alternate" type="text/markdown" href="https://pgsitarz.github.io/blog/2026-09-05-how-does-lmstudio-work.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -226,8 +226,8 @@
                             </svg>
                         </li>
                         <li class="pr-4">
-                            <a href="../../blog/2025-01-01-sharepoint-online-governance/" class="pr-4">
-                                Share​Point Online Governance Guidelines
+                            <a href="../../blog/2026-09-05-how-does-lmstudio-work/" class="pr-4">
+                                How Running Local Models Works with LM Studio
                             </a>
                         </li>
                     </ol>
@@ -236,124 +236,130 @@
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
-<h1 id="sharepoint-online-governance-guidelines">SharePoint Online Governance Guidelines</h1>
+<h1 id="how-running-local-models-works-with-lm-studio">How Running Local Models Works with LM Studio</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-01-01</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2026-09-05</span></div>
 </div>
 
-<h2 id="basic-guidelines">Basic guidelines</h2>
+<p>Running local models through <a href="https://lmstudio.ai/models" class="outbound" target="_blank"><span>LM Studio</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> bridges the gap between massive, cloud-hosted AI APIs (such as OpenAI or Anthropic) and your personal hardware. Instead of sending private data to external cloud servers, LM Studio downloads open-weights models and runs them entirely offline using your computer&#x27;s CPU and GPU.</p>
+<hr>
+<h2 id="core-operational-workflow">Core Operational Workflow</h2>
+<p>The mechanism behind how LM Studio executes models locally can be broken down into four foundational components:</p>
+<h3 id="1-gguf-quantization--hardware-offloading">1. GGUF Quantization &amp; Hardware Offloading</h3>
+<p>Before a Large Language Model (LLM) can run on consumer hardware, it must be optimized and compressed. LM Studio relies heavily on <strong><code translate="no" v-pre>llama.cpp</code></strong> and the <strong>GGUF</strong> (GPT-Generated Unified Format) standard:</p>
 <ul>
-<li>What&#x27;s a great sharepoint online governance tool?</li>
-<li>How to get a full listing of all sites and site types?</li>
-<li>How to make permissions to all of these sites consitent?</li>
-<li>How to give only specific AD groups the ownership of the root site?</li>
-<li>How to give only specific AD groups the member role?</li>
-<li>How to give everyone the viewer role on the root site?</li>
-<li>No AD members, except people of a specific AD group, can create SharePoint sites.</li>
-<li>Site owners can only give permissions, they cannot create subsites.</li>
-<li>Unique permissions can only exist at the site level (no unique permissions on a list for example).</li>
-<li>Enforce only three roles - owners, members, and visitors.  No roles like &quot;Members without delete&quot;, etc.</li>
+<li><strong>Quantization:</strong> Original model weights are typically stored in 16-bit floating-point precision (<code translate="no" v-pre>FP16</code>). Quantization compresses these weights down to lower bit rates (e.g., 4-bit <code translate="no" v-pre>Q4_K_M</code> or 8-bit <code translate="no" v-pre>Q8_0</code>). This drastically reduces VRAM/RAM footprints while retaining the vast majority of model accuracy and intelligence.</li>
+<li><strong>GPU Offloading:</strong> When loading a model, LM Studio detects available hardware acceleration drivers:
+<ul>
+<li><strong>Apple Silicon:</strong> Metal Performance Shaders</li>
+<li><strong>NVIDIA:</strong> CUDA cores</li>
+<li><strong>AMD:</strong> ROCm / Vulkan</li>
 </ul>
-<h2 id="recommendations">Recommendations</h2>
-<p>Keeping SharePoint from turning into the &quot;Wild West&quot; is all about balance. If you&#x27;re looking for a &quot;plain and simple&quot; approach that focuses on centralization and consistency, here is a foundational set of rules to keep your environment clean.</p>
-<h2 id="1-site-provisioning-the-who-can-build-rule">1. Site Provisioning (The &quot;Who Can Build&quot; Rule)</h2>
-<p>To prevent &quot;site sprawl,&quot; creating new sites should be a controlled process rather than a free-for-all.</p>
-<ul>
-<li><strong>Rule:</strong> <strong>Self-service site creation is disabled.</strong></li>
-<li><strong>The Workflow:</strong> Users must submit a request (via a simple form or ticket). Only members of a specific <strong>Active Directory (AD) Group</strong> (e.g., &quot;SharePoint Admins&quot; or &quot;IT Service Desk&quot;) have the technical rights to click the &quot;Create Site&quot; button.</li>
-<li><strong>The Benefit:</strong> This ensures every site has a clear purpose, a defined owner, and follows naming conventions before it even exists.</li>
+</li>
+<li><strong>Layer Distribution:</strong> Users can specify exact layer offloading. If a model is too large for your GPU VRAM, LM Studio can split the execution—running part of the neural network on the GPU and offloading remaining layers to system RAM via the CPU.</li>
 </ul>
 <hr>
-<h2 id="2-permission-structure-the-ad-group-rule">2. Permission Structure (The &quot;AD Group&quot; Rule)</h2>
-<p>Managing individual users inside SharePoint is a nightmare for scaling. Consistency comes from using groups.</p>
+<h3 id="2-model-discovery-via-hugging-face-integration">2. Model Discovery via Hugging Face Integration</h3>
+<p>The <code translate="no" v-pre>lmstudio.ai/models</code> hub and in-app search act as a direct, curated gateway to <strong>Hugging Face</strong>, the open-source AI model registry:</p>
 <ul>
-<li><strong>Rule:</strong> <strong>Never assign permissions to individual people.</strong> * <strong>The Workflow:</strong> 1.  Create an AD Group (or Microsoft 365 Group).</li>
+<li><strong>Direct Search &amp; Downloads:</strong> Search for top open-weights models like Meta Llama 3, Google Gemma, Mistral, Qwen, and DeepSeek.</li>
+<li><strong>Hardware Compatibility Verification:</strong> LM Studio analyzes your system&#x27;s total RAM and VRAM capacity, providing visual warnings or indicators showing whether a specific model size/quantization level will run smoothly on your machine.</li>
 </ul>
-<ol start="2">
-<li>Add the user to that AD Group.</li>
-<li>Add the AD Group to the SharePoint Site Group (Owners, Members, or Visitors).</li>
+<hr>
+<h3 id="3-local-inference-engine--playground-ui">3. Local Inference Engine &amp; Playground UI</h3>
+<p>Once a model&#x27;s <code translate="no" v-pre>.gguf</code> file is downloaded to your machine:</p>
+<ol>
+<li><strong>Air-Gapped Privacy:</strong> All matrix multiplications and token generation occur locally. You can disconnect from the internet completely and the model will operate without disruption.</li>
+<li><strong>Interactive Controls:</strong> The native chat UI allows real-time adjustments to key generation parameters:
+<ul>
+<li><strong>System Prompts:</strong> Define role-playing or task-specific instruction sets.</li>
+<li><strong>Temperature &amp; Top-P:</strong> Control randomness and output creativity.</li>
+<li><strong>Context Window Size:</strong> Adjust maximum token history based on available RAM.</li>
+</ul>
+</li>
 </ol>
+<hr>
+<h3 id="4-local-openai-compatible-developer-server">4. Local OpenAI-Compatible Developer Server</h3>
+<p>One of LM Studio&#x27;s core features for developers is its built-in <strong>Local Inference Server</strong>:</p>
 <ul>
-<li><strong>The Benefit:</strong> When an employee leaves or changes roles, IT updates their AD account, and their access is automatically revoked or updated across all SharePoint sites simultaneously.</li>
+<li><strong>Endpoint Emulation:</strong> It spins up a web server on your local machine (typically <code translate="no" v-pre>http://localhost:1234/v1</code>).</li>
+<li><strong>API Compatibility:</strong> The endpoint exposes paths mimicking OpenAI&#x27;s standard endpoints (<code translate="no" v-pre>/v1/chat/completions</code>, <code translate="no" v-pre>/v1/models</code>, <code translate="no" v-pre>/v1/embeddings</code>).</li>
+<li><strong>Seamless Integration:</strong> You can integrate your local setup with developer tools, AI coding assistants (e.g., Continue for VS Code), agent frameworks (e.g., LangChain, AutoGen), or custom scripts simply by swapping the base URL and pointing to your local machine.</li>
 </ul>
 <hr>
-<h2 id="3-inheritance-the-keep-it-simple-rule">3. Inheritance (The &quot;Keep It Simple&quot; Rule)</h2>
-<p>Breaking permissions at the folder or document level creates &quot;hidden&quot; access that is hard to audit.</p>
-<ul>
-<li><strong>Rule:</strong> <strong>Permissions are managed at the Site or Library level only.</strong></li>
-<li><strong>The Workflow:</strong> If a specific folder needs secret access that the rest of the site shouldn&#x27;t see, <strong>create a new site</strong> or a separate library instead of &quot;breaking inheritance&quot; on that folder.</li>
-<li><strong>The Benefit:</strong> You can tell exactly who has access to what just by looking at the top-level settings.</li>
-</ul>
-<hr>
-<h2 id="4-external-sharing-the-lock-the-gate-rule">4. External Sharing (The &quot;Lock the Gate&quot; Rule)</h2>
-<p>Uncontrolled sharing can lead to data leaks.</p>
-<ul>
-<li><strong>Rule:</strong> <strong>External sharing is disabled by default</strong> and only enabled on a per-site basis for specific &quot;Extranet&quot; sites.</li>
-<li><strong>The Workflow:</strong> If a team needs to collaborate with a vendor, they request a specific &quot;External-Enabled&quot; site. All other internal sites remain strictly &quot;Internal Only.&quot;</li>
-<li><strong>The Benefit:</strong> No one can accidentally share a sensitive internal payroll folder with a Gmail address.</li>
-</ul>
-<hr>
-<h2 id="5-lifecycle-management-the-cleanup-rule">5. Lifecycle Management (The &quot;Cleanup&quot; Rule)</h2>
-<p>Sites shouldn&#x27;t live forever if they aren&#x27;t being used.</p>
-<ul>
-<li><strong>Rule:</strong> <strong>Annual Site Attestation.</strong></li>
-<li><strong>The Workflow:</strong> Once a year, Site Owners receive a notification to confirm the site is still needed. If the owner has left the company or doesn&#x27;t respond, the site is backed up and deleted.</li>
-<li><strong>The Benefit:</strong> Keeps your storage costs down and ensures your search results aren&#x27;t cluttered with &quot;Project Alpha - 2019&quot; drafts.</li>
-</ul>
-<hr>
-<h3 id="summary-table-for-quick-reference">Summary Table for Quick Reference</h3>
-<retype-table copy-text="| Feature | Policy |
-| --- | --- |
-| **Site Creation** | Centralized (Only via IT/AD Group) |
-| **Access Control** | AD Groups Only (No individual users) |
-| **Permission Level** | Top-level (No unique folder permissions) |
-| **External Sharing** | Off by default (Enabled only by request) |
-| **Site Naming** | Must follow prefix (e.g., DEPT-SiteName) |">
+<h2 id="quick-reference-summary">Quick Reference Summary</h2>
+<retype-table copy-text="| Feature | Cloud API (e.g., OpenAI, Claude) | Local Model (via LM Studio) |
+| :--- | :--- | :--- |
+| **Privacy &amp; Security** | Data sent to third-party servers | 100% private and stored locally |
+| **Internet Requirement** | Always required | Completely offline capability |
+| **Cost Model** | Pay-per-token API fees | Free (uses existing hardware) |
+| **Customization** | Controlled by provider | Adjustable quantization, context, and weights |
+| **Latency / Speed** | Dependent on network connection | Dependent on local CPU/GPU specs |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>Feature</th>
-<th>Policy</th>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Cloud API (e.g., OpenAI, Claude)</th>
+<th style="text-align: left;">Local Model (via LM Studio)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Site Creation</strong></td>
-<td>Centralized (Only via IT/AD Group)</td>
+<td style="text-align: left;"><strong>Privacy &amp; Security</strong></td>
+<td style="text-align: left;">Data sent to third-party servers</td>
+<td style="text-align: left;">100% private and stored locally</td>
 </tr>
 <tr>
-<td><strong>Access Control</strong></td>
-<td>AD Groups Only (No individual users)</td>
+<td style="text-align: left;"><strong>Internet Requirement</strong></td>
+<td style="text-align: left;">Always required</td>
+<td style="text-align: left;">Completely offline capability</td>
 </tr>
 <tr>
-<td><strong>Permission Level</strong></td>
-<td>Top-level (No unique folder permissions)</td>
+<td style="text-align: left;"><strong>Cost Model</strong></td>
+<td style="text-align: left;">Pay-per-token API fees</td>
+<td style="text-align: left;">Free (uses existing hardware)</td>
 </tr>
 <tr>
-<td><strong>External Sharing</strong></td>
-<td>Off by default (Enabled only by request)</td>
+<td style="text-align: left;"><strong>Customization</strong></td>
+<td style="text-align: left;">Controlled by provider</td>
+<td style="text-align: left;">Adjustable quantization, context, and weights</td>
 </tr>
 <tr>
-<td><strong>Site Naming</strong></td>
-<td>Must follow prefix (e.g., DEPT-SiteName)</td>
+<td style="text-align: left;"><strong>Latency / Speed</strong></td>
+<td style="text-align: left;">Dependent on network connection</td>
+<td style="text-align: left;">Dependent on local CPU/GPU specs</td>
 </tr>
 </tbody>
 </table>
 </div>
 </retype-table>
-<p>The Logic: This prevents &quot;accidental oversharing&quot; where a user thinks they are sharing a file with a colleague but actually sends an anonymous link to the whole internet.</p>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
+                <div class="card-compact-title flex-1 w-full">Azure Cosmos DB Conf 2026</div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                     <span>
                         <a href="../../tags/">
                             <svg class="inline-block -mb-px mr-1.5 text-body-link hover:text-body-link-hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                         </a>
-                        <span class="mr-2"><a href="../../tags/sharepoint-online/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                    <span>sharepoint-online</span>
+                        <span class="mr-2"><a href="../../tags/ai/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                    <span>ai</span>
                 </a></span>
-                        <span class="mr-2"><a href="../../tags/sharepoint-governance/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                    <span>sharepoint-governance</span>
+                        <span class="mr-2"><a href="../../tags/local-ai/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                    <span>local-ai</span>
                 </a></span>
                     </span>
                 
@@ -366,20 +372,13 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../blog/2025-01-01-power-apps-tips-and-notes/">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                            <span>
-                                <span class="block text-xs font-normal text-base-text-muted">Newer</span>
-                                <span class="block mt-1">Power Apps Tips and Notes</span>
-                            </span>
-                        </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../blog/2025-01-01-sharepoint-online-wiki-sites/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../blog/2026-06-24-microsoft-data-api-builder/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Older</span>
-                                <span class="block mt-1">Share​Point Online Wiki Sites</span>
+                                <span class="block mt-1">Data API Builder</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>
@@ -423,6 +422,6 @@
 
     <div id="retype-overlay-target"></div>
 
-        <script data-cfasync="false">window.__DOCS__ = { "title": "SharePoint Online Governance Guidelines", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/blog/2025-01-01-sharepoint-online-governance.md" }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "How Running Local Models Works with LM Studio", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/blog/2026-09-05-how-does-lmstudio-work.md" }</script>
 </body>
 </html>

@@ -18,12 +18,16 @@
     <loc>https://pgsitarz.github.io/blog/4/</loc>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2026-05-11-disable-tier-upgrade/</loc>
-    <lastmod>2026-05-11T22:32:14Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2026-06-24-microsoft-data-api-builder/</loc>
     <lastmod>2026-06-24T23:46:12Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-09-05-how-does-lmstudio-work/</loc>
+    <lastmod>2026-09-05T20:32:21Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2026-05-11-disable-tier-upgrade/</loc>
+    <lastmod>2026-05-11T22:32:14Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/blog/2026-05-09-claude-code/</loc>
@@ -46,11 +50,11 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</loc>
+    <loc>https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-09-05-clear-browser-network-cache/</loc>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-configuring-docfx/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
@@ -62,12 +66,12 @@
     <lastmod>2026-04-05T03:08:34Z</lastmod>
   </url>
   <url>
-    <loc>https://pgsitarz.github.io/blog/2025-01-01-git-guide/</loc>
-    <lastmod>2026-08-26T23:34:33Z</lastmod>
-  </url>
-  <url>
     <loc>https://pgsitarz.github.io/blog/2025-01-01-power-apps-tips-and-notes/</loc>
     <lastmod>2026-04-05T03:08:34Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/blog/2025-01-01-git-guide/</loc>
+    <lastmod>2026-08-26T23:34:33Z</lastmod>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/</loc>
@@ -88,13 +92,13 @@
     <loc>https://pgsitarz.github.io/tags/devops/</loc>
   </url>
   <url>
+    <loc>https://pgsitarz.github.io/tags/ai/</loc>
+  </url>
+  <url>
     <loc>https://pgsitarz.github.io/tags/power-automate/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/sharepoint-online/</loc>
-  </url>
-  <url>
-    <loc>https://pgsitarz.github.io/tags/ai/</loc>
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/docfx/</loc>
@@ -149,5 +153,8 @@
   </url>
   <url>
     <loc>https://pgsitarz.github.io/tags/dab/</loc>
+  </url>
+  <url>
+    <loc>https://pgsitarz.github.io/tags/local-ai/</loc>
   </url>
 </urlset>

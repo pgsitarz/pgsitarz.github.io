@@ -5,6 +5,7 @@
 ## Blog
 
 - [Blog](https://pgsitarz.github.io/blog/index.md)
+- [How Running Local Models Works with LM Studio](https://pgsitarz.github.io/blog/2026-09-05-how-does-lmstudio-work.md): Running local models through LM Studio bridges the gap between massive, cloud-hosted AI APIs (such as OpenAI or Anthropic) and your personal hardware.
 - [Data API Builder](https://pgsitarz.github.io/blog/2026-06-24-microsoft-data-api-builder.md): Microsoft Ships Data API Builder for Azure SQL Databases
 - [Disable Tier Upgrade for Azure Cognitive Services](https://pgsitarz.github.io/blog/2026-05-11-disable-tier-upgrade.md): A step-by-step guide to disable automatic tier upgrades for Azure Cognitive Services using a batch script.
 - [Claude Code Setup](https://pgsitarz.github.io/blog/2026-05-09-claude-code.md): Run this in the command prompt (not PowerShell):

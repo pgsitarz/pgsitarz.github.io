@@ -5,7 +5,7 @@
     <link>https://pgsitarz.github.io/blog/</link>
     <description>Latest blog posts</description>
     <copyright>© 2026 pgsitarz.github.io</copyright>
-    <lastBuildDate>Wed, 24 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 GMT</lastBuildDate>
     <generator>Retype 4.7.0-preview</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://pgsitarz.github.io/blog/feed.xml" />
     <image>
@@ -13,6 +13,12 @@
       <link>https://pgsitarz.github.io/blog/</link>
       <url>https://pgsitarz.github.io/favicon.ico</url>
     </image>
+    <item>
+      <title>How Running Local Models Works with LM Studio</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-09-05-how-does-lmstudio-work/</guid>
+      <description>Running local models through LM Studio bridges the gap between massive, cloud-hosted AI APIs (such as OpenAI or Anthropic) and your personal hardware.</description>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Data API Builder</title>
       <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-06-24-microsoft-data-api-builder/</guid>

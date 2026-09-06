@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=umRy69br51E
 
 ## Latest posts
 
+[!card vert](/blog/2026-09-05-how-does-lmstudio-work.md)
 [!card vert](/blog/2026-06-24-microsoft-data-api-builder.md)
 [!card vert](/blog/2026-05-11-disable-tier-upgrade.md)
 [!card vert](/blog/2026-05-09-claude-code.md)
-[!card vert](/blog/2026-04-26-dev-monitor-resolution.md)
