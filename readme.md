@@ -5,7 +5,7 @@ icon: home
 
 ## Latest posts
 
-{{ for post in content.blog.posts | array.limit 4 ~}}
+{{ for post in content.blog.posts | array.limit 8 ~}}
 [!card vert]({{ post.filePath }})
 {{ end }}
 
