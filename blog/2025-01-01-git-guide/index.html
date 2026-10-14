@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.843542481801">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.7.0-preview.845323974049">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.7.0-preview">
@@ -41,12 +41,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.7.0-preview.843542481801" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.7.0-preview.845323974049" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.7.0-preview.843542481801" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.7.0-preview.845323974049" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.7.0-preview" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.7.0-preview.843542481801" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.7.0-preview.843542481801" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.7.0-preview.845323974049" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.7.0-preview.845323974049" defer></script>
 
     <style>
     a.flex.items-center.justify-center.flex-nowrap.h-16
@@ -401,6 +401,9 @@ git push ...</code></pre>
 <ul>
 <li><a href="https://www.atlassian.com/git/tutorials/saving-changes/gitignore" target="_blank">Atlassian .gitignore file notes</a></li>
 </ul>
+<h3 id="resetting-the-commit-editor">Resetting the commit editor</h3>
+<p>This sets VS Code as the commit editor:
+<code translate="no" v-pre>git config --global core.editor &quot;code --wait&quot;</code></p>
 <h1 id="git-best-practices">Git Best Practices</h1>
 <p>Here are some essential best practices for using Git effectively in your development workflow.</p>
 <h2 id="commit-messages">Commit Messages</h2>
@@ -466,6 +469,7 @@ git push ...</code></pre>
 <li>Include release notes for major versions</li>
 <li>Keep release branches for major versions</li>
 </ul>
+<h1 id="section"></h1>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://git-scm.com/doc" class="outbound" target="_blank"><span>Git Documentation</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
