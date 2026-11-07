@@ -1,6 +1,6 @@
 ﻿#  • pgsitarz
 
-- [Azure Cosmos DB Conf 2026](https://pgsitarz.github.io/readme.md): Azure Cosmos DB Conf 2026
+- [Power Platform admin plugin for Copilot Cowork | EP05 | Agents Under Control](https://pgsitarz.github.io/readme.md): Power Platform admin plugin for Copilot Cowork | EP05 | Agents Under Control
 
 ## Blog
 

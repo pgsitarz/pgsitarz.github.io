@@ -9,6 +9,10 @@
 [!card vert](/blog/2026-04-05-updating-retype-app.md)
 [!card vert](/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate.md)
 
+# Power Platform admin plugin for Copilot Cowork | EP05 | Agents Under Control
+
+https://www.youtube.com/watch?v=YjXZ3MO843Y
+
 # Azure Cosmos DB Conf 2026
 
 https://www.youtube.com/watch?v=OdPFriVuKtU&list=PLlrxD0HtieHh0o6VplO6WczH89pVWJwP1
