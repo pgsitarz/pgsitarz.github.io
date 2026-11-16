@@ -9,6 +9,12 @@ icon: home
 [!card vert]({{ post.filePath }})
 {{ end }}
 
+# Overview of Microsoft Dataverse
+
+https://www.youtube.com/watch?v=47YS2liNf6E&list=PPSV
+
+
+
 # Power Platform admin plugin for Copilot Cowork | EP05 | Agents Under Control
 
 https://www.youtube.com/watch?v=YjXZ3MO843Y
