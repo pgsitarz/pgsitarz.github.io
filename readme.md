@@ -11,8 +11,7 @@ icon: home
 
 # Overview of Microsoft Dataverse
 
-https://www.youtube.com/watch?v=47YS2liNf6E&list=PPSV
-
+https://www.youtube.com/watch?v=47YS2liNf6E
 
 
 # Power Platform admin plugin for Copilot Cowork | EP05 | Agents Under Control
