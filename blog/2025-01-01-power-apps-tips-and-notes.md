@@ -67,8 +67,4 @@ https://www.youtube.com/watch?v=QUwzvUXgj58
 
 You have to be a power platform admin to run this command.
 
-``Set-AdminPowerAppApisToBypassConsent -EnvironmentName [environment-id] -AppName [app-id]]``
-
-# Power Platform Community Conference
-
-https://powerplatformconf.com/#!/session/Enhancing%20Power%20Platform%20Governance%20Through%20Terraform:%20Embracing%20Infrastructure%20as%20Code/7663
+``Set-AdminPowerAppApisToBypassConsent -EnvironmentName [environment-id] -AppName [app-id]]`
