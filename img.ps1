@@ -2,7 +2,7 @@
 
 # Define your source and destination paths
 $sourcePath      = $env:USERPROFILE + "\OneDrive\Pictures\Screenshots 1"
-$destinationPath = $env:USERPROFILE + "\source\repos\pgsitarz\pgsitarz.github.io\assets"
+$destinationPath = $env:USERPROFILE + "\source\repos\pgsitarz\github-pgsitarz\assets"
 
 # Get the latest PNG file from the specific source folder
 $latestPng = Get-ChildItem -Path $sourcePath -Filter *.png | 
