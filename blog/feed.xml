@@ -5,7 +5,7 @@
     <link>https://pgsitarz.github.io/blog/</link>
     <description>Latest blog posts</description>
     <copyright>© 2026 pgsitarz.github.io</copyright>
-    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>Retype 4.7.0-preview</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://pgsitarz.github.io/blog/feed.xml" />
     <image>
@@ -13,6 +13,12 @@
       <link>https://pgsitarz.github.io/blog/</link>
       <url>https://pgsitarz.github.io/favicon.ico</url>
     </image>
+    <item>
+      <title>Automatic Dark (or Light) Mode on Windows 11</title>
+      <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-11-22-automatic-dark-or-light-mode-on-windows-11/</guid>
+      <description>Microsoft includes a dedicated Light Switch utility inside PowerToys, its official Windows enhancement suite.</description>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Relationship Between Repositories, Issues, and Projects in GitHub</title>
       <guid isPermaLink="true">https://pgsitarz.github.io/blog/2026-09-24-github-repos-issues-projects/</guid>

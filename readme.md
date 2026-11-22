@@ -1,5 +1,6 @@
 ## Latest posts
 
+[!card vert](/blog/2026-11-22-automatic-dark-or-light-mode-on-windows-11.md)
 [!card vert](/blog/2026-09-24-github-repos-issues-projects.md)
 [!card vert](/blog/2026-09-05-how-does-lmstudio-work.md)
 [!card vert](/blog/2026-06-24-microsoft-data-api-builder.md)
@@ -7,7 +8,6 @@
 [!card vert](/blog/2026-05-09-claude-code.md)
 [!card vert](/blog/2026-04-26-dev-monitor-resolution.md)
 [!card vert](/blog/2026-04-05-updating-retype-app.md)
-[!card vert](/blog/2026-04-05-automating-email-attachment-uploads-to-azure-devops-work-items-via-power-automate.md)
 
 # Overview of Microsoft Dataverse
 

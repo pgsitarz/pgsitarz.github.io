@@ -5,6 +5,7 @@
 ## Blog
 
 - [Blog](https://pgsitarz.github.io/blog/index.md)
+- [Automatic Dark (or Light) Mode on Windows 11](https://pgsitarz.github.io/blog/2026-11-22-automatic-dark-or-light-mode-on-windows-11.md): Microsoft includes a dedicated Light Switch utility inside PowerToys, its official Windows enhancement suite.
 - [Relationship Between Repositories, Issues, and Projects in GitHub](https://pgsitarz.github.io/blog/2026-09-24-github-repos-issues-projects.md): To put it simply: Repositories hold your assets, Issues define the work, and Projects organize the execution.
 - [How Running Local Models Works with LM Studio](https://pgsitarz.github.io/blog/2026-09-05-how-does-lmstudio-work.md): Running local models through LM Studio bridges the gap between massive, cloud-hosted AI APIs (such as OpenAI or Anthropic) and your personal hardware.
 - [Data API Builder](https://pgsitarz.github.io/blog/2026-06-24-microsoft-data-api-builder.md): Microsoft Ships Data API Builder for Azure SQL Databases
