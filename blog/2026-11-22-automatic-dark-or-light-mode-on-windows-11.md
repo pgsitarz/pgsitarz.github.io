@@ -10,7 +10,7 @@ Microsoft includes a dedicated Light Switch utility inside PowerToys, its offici
   - Follow Night Light: Syncs directly with your existing Windows Night Light schedule.
 - Choose what changes: Under Apply dark mode to, pick System and Apps (or just one of the two). You can also bind a custom keyboard shortcut to toggle themes manually anytime.
 
-<img src="/assets/Screenshot_2026-11-22_180802.png">
+<img src="/assets/screenshot_2026-11-22_180802.png">
 
 <br/>
 <br/>
